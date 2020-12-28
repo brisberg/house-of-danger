@@ -1,9 +1,13 @@
 :: Statuary
 
-You stand in a statue garden. There is a male statue with a gleaming sword in
+You stand in a statue garden. There is a soldier statue with a gleaming sword in
 the center.
 
+<<Clue 1 "Clue-1">>
+
 Optional Challenge: Search Statue
+
+<<Clue 2 "Clue-2">>
 
 [[Option 1|House Door]]: Knock on the house door.
 [[Option 2|Hedge Maze]]: Visit the Hedge Maze.

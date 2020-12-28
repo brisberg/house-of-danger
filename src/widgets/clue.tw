@@ -1,0 +1,8 @@
+:: Clue [widget]
+<<nobr>>
+  <<widget "Clue">>
+    <<linkreplace "Clue #$args[0]">>
+      <<include $args[1]>>
+    <</linkreplace>>
+  <</widget>>
+<</nobr>>
