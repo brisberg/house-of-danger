@@ -3,5 +3,3 @@
 You made it into the house!
 
 You Win!
-
-<<run console.log(State.metadata.get("clues-found")); >>

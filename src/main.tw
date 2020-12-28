@@ -9,7 +9,8 @@ House of Danger
 }
 
 :: StoryInit
-<<run State.metadata.set("clues-found", State.metadata.get("clues-found") || new Array(150))>>
+<<run memorize("clues-found", recall("clues-found") || new Array(150))>>
+<<set $cluesFound to new Array(150)>>
 
 :: Start
 Hello World from Twine on Spindle!
