@@ -8,6 +8,9 @@ House of Danger
 	"format-version": "2.31.1"
 }
 
+:: StoryInit
+<<run State.metadata.set("clues-found", State.metadata.get("clues-found") || new Array(150))>>
+
 :: Start
 Hello World from Twine on Spindle!
 

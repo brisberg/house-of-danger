@@ -1,8 +1,20 @@
 :: Clue [widget]
 <<nobr>>
   <<widget "Clue">>
-    <<linkreplace "Clue #$args[0]">>
-      <<include $args[1]>>
-    <</linkreplace>>
+    <div class="clue-box">
+      <<linkappend "Clue #$args[0]" "div">>
+        <br><<SaveClueAchievement $args[0]>>
+        <<include $args[1]>>
+      <</linkappend>>
+    </div>
+  <</widget>>
+
+  <<widget "SaveClueAchievement">>
+    <<run
+      const achievements = State.metadata.get("clues-found");
+      achievements[$args[0]] = true;
+      State.metadata.set("clues-found", achievements);
+      console.log(`SaveClue ${achievements}`);
+    >>
   <</widget>>
 <</nobr>>
