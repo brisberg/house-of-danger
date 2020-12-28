@@ -1,0 +1,16 @@
+{
+    "template": "https://github.com/brisberg/cruft-spindle-project/",
+    "commit": "b76e9641f14a75235fcc0b4771a2d64a818347b0",
+    "context": {
+        "cookiecutter": {
+            "full_name": "Brandon Risberg",
+            "email": "brandon.risberg@gmail.com",
+            "github_username": "brisberg",
+            "title": "House of Danger",
+            "repo_slug": "house-of-danger",
+            "description": "Choose your own adventure game to uncover the mystery of a creepy, futuristic house",
+            "_template": "https://github.com/brisberg/cruft-spindle-project/"
+        }
+    },
+    "directory": null
+}

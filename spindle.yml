@@ -1,0 +1,9 @@
+id: "house-of-danger"
+version: "0.1.0"
+title: "House of Danger"
+format: "sugarcube-2.31.1"
+description: "Choose your own adventure game to uncover the mystery of a creepy, futuristic house"
+header:
+  - "header/*"
+deps:
+  - "src/*"

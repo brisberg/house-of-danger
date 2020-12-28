@@ -1,0 +1,14 @@
+{
+  "name": "house-of-danger",
+  "version": "0.1.0",
+  "description": "Choose your own adventure game to uncover the mystery of a creepy, futuristic house",
+  "scripts": {
+    "build": "yarn run spindle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Risberg",
+  "license": "MIT",
+  "devDependencies": {
+    "@brisberg/spindle": "^0.2.2"
+  }
+}
