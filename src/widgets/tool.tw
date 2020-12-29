@@ -6,7 +6,7 @@
   <</widget>>
 
   <<widget "Tool">>
-    <span class='tooltip'>
+    <span class='tooltip tool'>
       $args[0]
       <span class='tooltip-bottom tooltiptext'>
         $args[1]
