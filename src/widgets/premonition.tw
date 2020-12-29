@@ -1,0 +1,21 @@
+:: Premonitions [widget]
+<<nobr>>
+  <<widget "FindPremonition">>
+    <<if $psychicLevel gte $args[1]>>
+      You sense a new <<Premonition $args[0] "Tooltip Desc">>, warning you of danger ahead.
+      <<pickup '$premonitions' $args[0]>>
+    <<else>>
+      You sense fleeting impressions of a Psychic Premonition, but your Psychic
+      Sentitivity is not high enough to make any sense of it.
+    <</if>>
+  <</widget>>
+
+  <<widget "Premonition">>
+    <span class='tooltip premonition'>
+      $args[0]
+      <span class='tooltip-bottom tooltiptext'>
+        $args[1]
+      </span>
+    </span>
+  <</widget>>
+<</nobr>>

@@ -11,6 +11,8 @@ House of Danger
 :: StoryInit
 <<run memorize("clues-found", recall("clues-found") || new Array(150))>>
 <<set $cluesFound to new Array(150)>>
+<<set $psychicLevel to 3>>
+<<set $dangerLevel to 3>>
 
 <<newinventory '$tools'>>
 <<newinventory '$items'>>
@@ -23,5 +25,7 @@ Hello World from Twine on Spindle!
 
 :: PassageFooter
 <hr>
+Psychic Level: $psychicLevel
+Danger Level: $dangerLevel
 Tools: <<inventory '$tools' ', '>>
 Items: <<inventory '$items' ', '>>

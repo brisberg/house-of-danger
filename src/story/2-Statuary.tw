@@ -11,6 +11,8 @@ Optional Challenge: Search Statue
 [[Option 1|House Door]]: Knock on the house door.
 [[Option 2|Hedge Maze]]: Visit the Hedge Maze.
 
+<<FindPremonition 'hedge-maze' 5>>
+
 
 :: 1-Clue
 This is the first clue!
