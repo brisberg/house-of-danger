@@ -12,7 +12,16 @@ House of Danger
 <<run memorize("clues-found", recall("clues-found") || new Array(150))>>
 <<set $cluesFound to new Array(150)>>
 
+<<newinventory '$tools'>>
+<<newinventory '$items'>>
+<<newinventory '$premonitions'>>
+
 :: Start
 Hello World from Twine on Spindle!
 
 [[Start|House Gates]]
+
+:: PassageFooter
+<hr>
+Tools: <<inventory '$tools' ', '>>
+Items: <<inventory '$items' ', '>>

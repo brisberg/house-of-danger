@@ -14,6 +14,8 @@ Optional Challenge: Search Statue
 
 :: 1-Clue
 This is the first clue!
+You find a Civil War era cavalry saber in surprisingly good condition!
+<<pickup '$tools' 'Saber'>>
 
 :: 2-Clue
 This is the second clue!
