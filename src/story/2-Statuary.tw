@@ -2,9 +2,7 @@
 
 You stand in a statue garden. There is a soldier statue with a gleaming sword in the center.
 
-<<Clue 1 "1-Clue">>
-
-Optional Challenge: Search Statue
+<<Challenge 'statue' 'Search Statue S' 'Search Statue F'>>
 
 <<Clue 2 "2-Clue">>
 
@@ -13,6 +11,11 @@ Optional Challenge: Search Statue
 
 <<FindPremonition 'hedge-maze' 5>>
 
+:: Search Statue S
+<<Clue 1 "1-Clue">>
+
+:: Search Statue F
+You find nothing interesting about the statue.
 
 :: 1-Clue
 This is the first clue!

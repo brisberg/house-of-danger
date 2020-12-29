@@ -29,3 +29,4 @@ Psychic Level: $psychicLevel
 Danger Level: $dangerLevel
 Tools: <<inventory '$tools' ', '>>
 Items: <<inventory '$items' ', '>>
+Premonitions: <<inventory '$premonitions' ', '>>

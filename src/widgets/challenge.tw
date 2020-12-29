@@ -1,0 +1,29 @@
+:: Challenges [widget]
+<<nobr>>
+  <<widget "Challenge">>
+    <div class="challenge-box">
+      <<linkappend "Challenge $args[0]">>
+        <<set _chResult to random(1, 6)>>
+        <br>
+        Roll of _chResult.
+        <<if _chResult gte $dangerLevel>>
+          You succeeded the Challenge!
+          <br>
+          <<include $args[1]>>
+        <<else>>
+          You failed the Challenge!
+          <br>
+          <<include $args[2]>>
+        <</if>>
+      <</linkappend>>
+    </div>
+  <</widget>>
+
+  <<widget "SaveClueAchievement">>
+    <<run
+      const achievements = State.metadata.get("clues-found");
+      achievements[$args[0]] = true;
+      State.metadata.set("clues-found", achievements);
+    >>
+  <</widget>>
+<</nobr>>

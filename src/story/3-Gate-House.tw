@@ -3,5 +3,15 @@
 You stand in the gate house.
 
 There is a Key here.
+<<pickup '$items' 'Key'>>
+
+<<Challenge 'read-map' 'Read Map Success' 'Read Map Failure'>>
 
 [[Option 1|Statuary]]: Pass through to the Statuary.
+
+:: Read Map Success
+You inspect the map on the wall and determine the location of the house.
+You jot it down in your notebook. <<pickup '$items' 'Note (House Location)'>>
+
+:: Read Map Failure
+You forgot to bring your reading glasses and cannot make heads or tails of the map.
