@@ -1,0 +1,13 @@
+:: StoryInit
+<<run memorize("clues-found", recall("clues-found") || new Array(150))>>
+<<set $cluesFound to new Array(150)>>
+<<set $psychicLevel to 3>>
+<<set $dangerLevel to 3>>
+
+<<newinventory '$tools'>>
+<<newinventory '$items'>>
+<<newinventory '$premonitions'>>
+
+<<for _i, _passage range Story.lookup('tags', 'storyinit') >>
+	<<include _passage.title>>
+<</for>>
