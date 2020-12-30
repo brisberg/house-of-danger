@@ -1,0 +1,5 @@
+/* Css class for a challenge display box. */
+.challenge-box {
+  border: #2b73b7 1px dashed;
+  padding: 0px 5px 5px 5px;
+}

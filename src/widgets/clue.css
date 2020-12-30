@@ -1,0 +1,5 @@
+/* Css class for a clue display box. */
+.clue-box {
+  border: #bba566 1px dashed;
+  padding-left: 5px;
+}
