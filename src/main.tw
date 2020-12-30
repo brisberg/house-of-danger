@@ -18,6 +18,10 @@ House of Danger
 <<newinventory '$items'>>
 <<newinventory '$premonitions'>>
 
+<<for _i, _passage range Story.lookup('tags', 'storyinit') >>
+	<<include _passage.title>>
+<</for>>
+
 :: Start
 Hello World from Twine on Spindle!
 
