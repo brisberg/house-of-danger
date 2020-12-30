@@ -1,0 +1,17 @@
+:: Chapter 1: The Grounds [nofooter]
+
+<h1 class="title">\
+Chapter 1
+The Grounds
+</h1>
+
+<div class="title">[[Start|Chapter 1 Opening]]</div>
+
+:: Chapter 1 Opening
+You are a detective and psychic investigator!
+
+<<linkappend "More">>
+  And you are investigating a mysterious manor house. You pull up to the gates in the mid afternoon to find them locked.
+
+  [[Approach the Gates|Outside Gates]]
+<</linkappend>>

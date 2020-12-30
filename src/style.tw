@@ -1,4 +1,8 @@
 :: Style [stylesheet]
+.title {
+	text-align: center;
+}
+
 /* Css class for a clue display box. */
 .clue-box {
 	border: #bba566 1px dashed;

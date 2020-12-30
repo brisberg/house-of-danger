@@ -10,6 +10,6 @@ $(document).on(':passagerender', (ev) => {
 
     const clues = variables().cluesFound[clueId - 1];
     clues[cludID - 1] = true;
-    variables().cluesFound = clues
+    variables().cluesFound = clues;
   }
 });

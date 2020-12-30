@@ -1,20 +1,20 @@
 :: Challenges [widget]
 <<nobr>>
   <<widget "Challenge">>
-    <div class="challenge-box">
+    <div id="challenge-$args[0]" class="challenge-box">
       <<linkappend "Challenge $args[0]">>
-        <<set _chResult to random(1, 6)>>
-        <br>
-        Roll of _chResult.
-        <<if _chResult gte $dangerLevel>>
-          You succeeded the Challenge!
+          <<set _chResult to random(1, 6)>>
           <br>
-          <<include $args[1]>>
-        <<else>>
-          You failed the Challenge!
-          <br>
-          <<include $args[2]>>
-        <</if>>
+          Roll of _chResult.
+          <<if _chResult gte $dangerLevel>>
+            You succeeded the Challenge!
+            <br>
+            <<include $args[1]>>
+          <<else>>
+            You failed the Challenge!
+            <br>
+            <<include $args[2]>>
+          <</if>>
       <</linkappend>>
     </div>
   <</widget>>

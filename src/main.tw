@@ -21,12 +21,14 @@ House of Danger
 :: Start
 Hello World from Twine on Spindle!
 
-[[Start|House Gates]]
+[[Start|Chapter 1: The Grounds]]
 
 :: PassageFooter
-<hr>
-Psychic Level: $psychicLevel
-Danger Level: $dangerLevel
-Tools: <<inventory '$tools' ', '>>
-Items: <<inventory '$items' ', '>>
-Premonitions: <<inventory '$premonitions' ', '>>
+<<if not tags().includes("nofooter")>>
+	<hr>
+	Psychic Level: $psychicLevel
+	Danger Level: $dangerLevel
+	Tools: <<inventory '$tools' ', '>>
+	Items: <<inventory '$items' ', '>>
+	Premonitions: <<inventory '$premonitions' ', '>>
+<</if>>
