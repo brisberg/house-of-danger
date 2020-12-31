@@ -1,7 +1,16 @@
 :: Outside Gates
 You appear outside the gates
 
-<<Clue 1 "clue 1">>
+<<Clue "first-clue">>
+<<Clue "second-clue">>
 
-:: clue 1
+
+:: Gates Setup [storyinit]
+<<createclue "first-clue" 1 "Clue 1">>
+<<createclue "second-clue" 2 "Clue 2">>
+
+:: Clue 1
 This is a clue
+
+:: Clue 2
+This is a second clue

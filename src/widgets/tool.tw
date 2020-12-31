@@ -5,6 +5,12 @@
     <<Tool $args[0] "Tooltip Desc">>
   <</widget>>
 
+  /% Tool display Macro
+    Takes a Tool name and tooltip and prints the name with the tooltip on hover.
+
+    @param string Tool name
+    @param string Tooltip Text
+  %/
   <<widget "Tool">>
     <span class='tooltip tool'>
       $args[0]

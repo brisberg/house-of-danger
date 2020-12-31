@@ -1,15 +1,28 @@
 :: Clue [widget]
 <<nobr>>
+  /% Clue display Macro
+    Displays a Clue Box with the clue number. When clicked, it expands
+    to present the clue and records it in the achievements.
+
+    @param string Clue string identifier
+  %/
   <<widget "Clue">>
+    <<set _clue to setup.AllClues[$args[0]]>>
     <div class="clue-box">
-      <<linkappend "Clue #$args[0]">>
-        <<SaveClueAchievement $args[0]>>
+      <<linkappend 'Clue #_clue.id'>>
+        <<SaveClueAchievement _clue.id>>
         <br>
-        <<include $args[1]>>
+        <<include _clue.passage>>
       <</linkappend>>
     </div>
   <</widget>>
 
+  /% SaveClueAchievement Macro
+    Silently Takes the numerical clue ID and updates the achievements
+    metadata field for this clue to record the user finding it.
+
+    @param number Clue id
+  %/
   <<widget "SaveClueAchievement">>
     <<run
       const achievements = State.metadata.get("clues-found");

@@ -1,5 +1,14 @@
 :: Challenges [widget]
 <<nobr>>
+  /% Challenge Macro
+    Displays a Challenge box and provides a button for the Player to attempt the Challenge.
+    Rolls a random number and based on the outcome compared to the DangerLevel prints the
+    result.
+
+    @param string Challenge name
+    @param string Success Passage title
+    @param string Failure Passage title
+  %/
   <<widget "Challenge">>
     <div id="challenge-$args[0]" class="challenge-box">
       <<linkappend "Challenge $args[0]">>
@@ -17,13 +26,5 @@
           <</if>>
       <</linkappend>>
     </div>
-  <</widget>>
-
-  <<widget "SaveClueAchievement">>
-    <<run
-      const achievements = State.metadata.get("clues-found");
-      achievements[$args[0]] = true;
-      State.metadata.set("clues-found", achievements);
-    >>
   <</widget>>
 <</nobr>>

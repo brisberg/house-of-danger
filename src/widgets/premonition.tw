@@ -1,5 +1,12 @@
 :: Premonitions [widget]
 <<nobr>>
+  /% FindPremonition Macro
+    If the player has enough Psychic Level to recieve the premonition, this macro
+    display text about aquiring the premonition and adds it to the player inventory.
+
+    @param string Premonition name
+    @param number Minimum Psychic Level
+  %/
   <<widget "FindPremonition">>
     <<if $psychicLevel gte $args[1]>>
       You sense a new <<Premonition $args[0] "Tooltip Desc">>, warning you of danger ahead.
@@ -10,6 +17,12 @@
     <</if>>
   <</widget>>
 
+  /% Premonition display Macro
+    Takes a Premonition name and tooltip and prints the name with the tooltip on hover.
+
+    @param string Premonition name
+    @param string Tooltip Text
+  %/
   <<widget "Premonition">>
     <span class='tooltip premonition'>
       $args[0]

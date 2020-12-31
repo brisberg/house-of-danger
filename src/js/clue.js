@@ -1,15 +1,32 @@
-$(document).on(':passagerender', (ev) => {
-  if (ev.passage.tags.includes("clue")) {
-    const title = ev.passage.title;
-    const clueID = title.split(' ')[0];
+// Config.debug = true;
 
-    // Save found clue history and achievements.
-    const achievements = recall("clues-found");
-    achievements[clueID - 1] = true;
-    memorize("clues-found", achievements);
-
-    const clues = variables().cluesFound[clueId - 1];
-    clues[cludID - 1] = true;
-    variables().cluesFound = clues;
+class Clue {
+  constructor(name, id, passage) {
+    this.name = name;
+    this.id = id;
+    this.passage = passage;
   }
+
+  clone() {
+    return new Clue(this.name, this.id, this.passage);
+  }
+
+  toJSON() {
+    // Return a code string that will create a new instance containing our
+    // own data.
+    return JSON.reviveWrapper(String.format(
+      'new Clue({0},{1},{2})',
+      JSON.stringify(this.name),
+      JSON.stringify(this.id),
+      JSON.stringify(this.passage),
+	  ));
+  }
+}
+
+Macro.add('createclue', {
+  // tags: null,
+  handler: function () {
+    setup.AllClues = setup.AllClues || {};
+    setup.AllClues[this.args[0]] = new Clue(...this.args);
+  },
 });
