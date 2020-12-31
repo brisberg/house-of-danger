@@ -9,7 +9,8 @@
   var options = {
       tryGlobal : true,
       defaultStrings : {
-          empty     : 'The inventory is empty...',
+          // empty     : 'The inventory is empty...',
+          empty     : 'None',
           listDrop  : 'Discard',
           separator : '\n'
       }

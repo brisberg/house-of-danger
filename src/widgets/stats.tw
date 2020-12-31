@@ -1,0 +1,20 @@
+:: Stat Adjusters [widget]
+<<nobr>>
+  /% AdjustPsychicLevel Macro
+    Increments or Decrements the global PsychicLevel by the specified amount
+
+    @param number PsychicLevel Adjustment
+  %/
+  <<widget "AdjustPsychicLevel">>
+    <<set $PsychicLevel to $PsychicLevel + $args[0]>>
+  <</widget>>
+
+  /% AdjustDangerLevel Macro
+    Increments or Decrements the global DangerLevel by the specified amount
+
+    @param number DangerLevel Adjustment
+  %/
+  <<widget "AdjustDangerLevel">>
+    <<set $DangerLevel to $DangerLevel + $args[0]>>
+  <</widget>>
+<<nobr>>
