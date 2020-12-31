@@ -4,3 +4,12 @@
 
 If you search the wall for a way in, go to [[Story Card 13|Statuary]].
 If you climb the gate, go to [[Story Card 7|]].
+
+/% Initial starting items %/
+<<pickup '$items' 'waterbottle'>>
+<<pickup '$tools' 'pocketknife'>>
+
+
+:: Initial Inventory [storyinit]
+<<CreateItem 'waterbottle' 'Waterbottle' 'An Old Waterbottle'>>
+<<CreateItem 'pocketknife' 'Pocketknife' 'You old, trust pocketknife.'>>

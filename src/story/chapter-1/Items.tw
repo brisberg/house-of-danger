@@ -1,7 +1,0 @@
-:: Chapter 1: Items [storyinit]
-<<CreateItem 'waterbottle' 'Waterbottle' 'An Old Waterbottle'>>
-<<CreateItem 'pocketknife' 'Pocketknife' 'You old, trust pocketknife.'>>
-
-/% Initial starting items %/
-<<pickup '$items' 'waterbottle'>>
-<<pickup '$tools' 'pocketknife'>>
