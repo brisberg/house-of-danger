@@ -1,0 +1,18 @@
+:: Bush Garden
+  You emerge into a clearing. Manicured bushes in the shapes of fish, swans, and rabbits perch atop the well-kept lawn. One larger shrub has been sculpted to look like an outstretched hand with its palm upturned. You see a black handle of some kind sticking up out of one of the fingertips.
+  A brick path winds through the shrubs and splits into two paths in the distance. One of these leads towards a rickety wooden gate flanked by a pair of stone angel statues. The other path leads into an open field, across which you can see the front door of the Marsden manor.
+
+// Image of Hand Hedge
+
+<<Clue 'hedge-trimmer'>>
+
+If you walk through the wooden gate, go to [[Story Card 21|Cemetery]].
+If you head across the field towards the manor's front door, go to [[Story Card 3|Mine Field]].
+
+:: Bush Garden Setup [storyinit]
+<<CreateClue "hedge-trimmer" 5 "Clue 5">>
+<<CreateItem 'hedgetrimmer' '$ Hedge Trimmers' '$ A rusty set of hedge trimmers'>>
+
+:: Clue 5
+You find a set of hedge trimmers.
+<<pickup '$tools' 'hedgetrimmer'>>

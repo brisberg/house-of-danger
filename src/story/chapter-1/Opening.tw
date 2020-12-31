@@ -7,11 +7,26 @@ The Grounds
 
 <div class="title">[[Start|Chapter 1 Opening]]</div>
 
-:: Chapter 1 Opening
-You are a detective and psychic investigator!
+:: Chapter 1 Opening [nofooter]
+  It's a Tuesday morning in late June, and you wake up in a cold weat. The nightmares came again last night. Even though you are an aspiring detective and psychic investigator, you haven't been able to make sense of the haunting dreams you've had these past few weeks. In your dreams, you keep seeing the same spooky house. You're still shivering under the covers when you hear the phone ring downstairs in your basement, where you have your combination office and research laboratory. You dash down to the lab to answer it.
+  "I need... I need...," a weak voice says when you pick up the receiver. "I need your hel-l-l-lp." You hear a louse click, and the phone goes dead.
+  But you were prepared: while the caller was talking, you activated your high-speed telephone tracing device. It instantly displays the caller's number: 555-7259.
+  You call back the number right away, but there's no answer. After consulting the tall stack of reverse phone books behind your desk, you are disappointed to learn the number is unlisted.
+  You sense that the phone call is somehow related to your nightmares.
+  Later, while at the Hedge Brook Police Station to return a night scope you borrowed for a recent stakeout, you describe the mysterious phone call and you recurring dreams to your friend, Sergeant Morrison.
+  "That call does sound strang," he says. "We'll look into it."
+  "And about that house in your dreams," a voice says from the hallway. "I wonder if your're dreaming about the Marsden house out on Hedge Brook Road." Detective Murphy sticks his mustached face into the room.
+  "Modern house, ornate gate... That sounds like the Marsden place, all right," says Sergeant Morrison. "Strange things are reported to happen out there."
+  Detective Murphy takes a puff on his pipe. "That place is haunted," he says. "I know it sounds unprofessional, but I've had a file on the Marsen house for years, and I'm sure of it." He waves a folder in front of your eyes, and a phone number written on the front jumps out at you. /It matches the one from your mysterious phone call./
+  So the call is related to your nightmares--/your psychic senses were right!
 
-<<linkappend "More">>
-  And you are investigating a mysterious manor house. You pull up to the gates in the mid afternoon to find them locked.
+<<Clue 'chapter-1-goal'>>
 
-  [[Approach the Gates|Outside Gates]]
-<</linkappend>>
+[[Proceed to the Marsden Estate|Outside Gates]]
+
+:: Chapter 1 Opening Setup [storyinit]
+<<CreateClue 'chapter-1-goal' 4 'Chapter 1 Goal'>>
+
+:: Chapter 1 Goal
+Chapter Goal:
+Find a way into the Marsden Manor.

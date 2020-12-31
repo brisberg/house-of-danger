@@ -1,0 +1,8 @@
+:: Cemetery
+  Passing between a pair of stone angels, you enter an old family cemetery. There is a marble mausoleum in the center of the cemetery. A short set of stairs leads into its shadowy interior.
+  Next to where you stand, a freshly dug grave yawns in the pale sunlight. It's unsettling to think of climbing into it, but you see something shiny embedded in the dirt walls.
+
+  // Image of the Mausoleum
+
+  If you enter the mausoleum, go to [[Story Card 5|Mausoleum]].
+  If you climb into the open grave, go to [[Story Card 16|Tunnel Collapse]].

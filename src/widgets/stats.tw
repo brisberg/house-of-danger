@@ -17,4 +17,4 @@
   <<widget "AdjustDangerLevel">>
     <<set $DangerLevel to $DangerLevel + $args[0]>>
   <</widget>>
-<<nobr>>
+<</nobr>>

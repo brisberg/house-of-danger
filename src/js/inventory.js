@@ -24,7 +24,7 @@
             sep = (this.args[1]) ? this.args[1] : false;
 
         $wrapper
-            .wiki(inv.toArray().map((i) => setup.AllItems[i].name))
+            .wiki(inv.toArray().map((i) => setup.AllItems[i].name).join(', '))
             .addClass('macro-' + this.name)
             .appendTo(this.output);
     }

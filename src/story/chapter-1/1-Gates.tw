@@ -1,16 +1,6 @@
 :: Outside Gates
-You appear outside the gates
+  Back at home, you grab a bottle of water and your trusty pocketknife, preparing for a new investigation. Half an hour later, you stand before the Marsden residence, which appears exactly as it did in your nightmares. The house's futuristic look is a strange contract to the antiquated appearance of the stone wall and the wrought iron gate, which is locked shut and wrapped in steel chains.
+  Even though the air is balmy, a chill travels down your spine. The gathering clouds on the horizon hint at a brewing summer thunderstorm.
 
-<<Clue "first-clue">>
-<<Clue "second-clue">>
-
-
-:: Gates Setup [storyinit]
-<<CreateClue "first-clue" 1 "Clue 1">>
-<<CreateClue "second-clue" 2 "Clue 2">>
-
-:: Clue 1
-This is a clue
-
-:: Clue 2
-This is a second clue
+If you search the wall for a way in, go to [[Story Card 13|Statuary]].
+If you climb the gate, go to [[Story Card 7|]].

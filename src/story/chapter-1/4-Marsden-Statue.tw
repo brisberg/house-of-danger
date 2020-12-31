@@ -1,0 +1,46 @@
+:: Marsden Statue
+  The horseman is a dashing, bearded Civil War soldier, his broonze face stoic. He holds out a cavalry sabre towards the brooding sky. The sword's edge glints in the weak sunlight that penetrates the thickening clouds above. The sword looks almost new.
+  At the base of the statue is a plaque that proclaims this as a memorial to Henry Marsden. The plaque reads:
+  /% TODO: Italisize or stylize the plaque quote %/
+  Henry Marsden, born 1839, died 1887. General in the Union Army during the Civil War. Severely wounded at the Battle of Shiloh in 1862. Appointed warden of Hedge Brook Prison in 1880.
+
+  To your left is the entrance to a hedge maze. To your right is a graying picket fence with a rickety wooden gate. You can see two stone angel statues and beyond them, a cemetery.
+
+<<Challenge 'inspect-statue' 'Search Statue S' 'Search Statue F'>>
+<<Challenge 'climb-statue' 'Climb Statue S' 'Climb Statue F'>>
+
+<<run console.log(setup.AllClues)>>
+
+If you enter the hedge maze, go to [[Story Card 12|Hedge Maze]].
+If you visit the cemetery, go to [[Story Card 21|Cemetery]].
+
+
+:: Search Statue S
+<<Clue 'statue-history'>>
+
+:: Search Statue F
+<<AdjustDangerLevel 1>>
+
+:: Climb Statue S
+<<Clue 'find-saber'>>
+
+:: Climb Statue F
+You slip while trying to comine the statue, with a clanging sound which may have attracted attention.
+<<AdjustDangerLevel 2>>
+/% TODO: Implement try again challenges %/
+
+
+:: Marsden Statue Setup [storyinit]
+<<CreateClue 'statue-history' 18 'Extended History'>>
+<<CreateClue 'find-saber' 2 'Find Cavalry Saber'>>
+<<CreateItem 'saber' 'Cavalry Saber' 'A gleaming cavalry saber in surprisingly good condition'>>
+
+
+:: Extended History
+/% TODO: Fill in Clue 18 %/
+This is the extended history of Henry Marsden. He died in a fire at the Prison.
+
+
+:: Find Cavalry Saber
+You climb the statue and sucessfully retrieve a <<Tool 'Cavalry Saber'>>.
+<<PickupTool 'saber'>>

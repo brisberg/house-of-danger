@@ -1,8 +1,8 @@
-:: Statuary
+:: Statuary Test
 
 You stand in a statue garden. There is a soldier statue with a gleaming sword in the center.
 
-<<Challenge 'statue' 'Search Statue S' 'Search Statue F'>>
+<<Challenge 'statue' 'Test Search Statue S' 'Test Search Statue F'>>
 
 <<Clue 2 "2-Clue">>
 
@@ -11,10 +11,10 @@ You stand in a statue garden. There is a soldier statue with a gleaming sword in
 
 <<FindPremonition 'hedge-maze' 5>>
 
-:: Search Statue S
+:: Test Search Statue S
 <<Clue 1 "1-Clue">>
 
-:: Search Statue F
+:: Test Search Statue F
 You find nothing interesting about the statue.
 
 :: 1-Clue

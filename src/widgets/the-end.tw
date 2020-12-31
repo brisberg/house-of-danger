@@ -1,0 +1,7 @@
+:: The End Widget [widget]
+
+<<widget "TheEnd">>
+<h2 class="title">The End</h2>
+
+You died. <<link "Try again?">><<run UI.restart(); >><</link>>
+<</widget>>
