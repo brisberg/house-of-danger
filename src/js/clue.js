@@ -1,5 +1,10 @@
-// Config.debug = true;
-
+/**
+ * Clue class represents a single clue definition. These are build during game
+ * setup and added to the `setup` object.
+ *
+ * Clues are generally referenced by their name, but ID is a unique, positive
+ * number used for achievement tracking.
+ */
 class Clue {
   constructor(name, id, passage) {
     this.name = name;
@@ -23,7 +28,14 @@ class Clue {
   }
 }
 
-Macro.add('createclue', {
+/**
+ * CreateClue Macro definition for registering a new Clue instance to `setup`.
+ *
+ * @param name string Clue name
+ * @param id Clue numerical ID
+ * @param passage Title of the passage to containing the Clue contents
+ */
+Macro.add('CreateClue', {
   // tags: null,
   handler: function () {
     setup.AllClues = setup.AllClues || {};

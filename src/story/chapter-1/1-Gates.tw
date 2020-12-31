@@ -6,8 +6,8 @@ You appear outside the gates
 
 
 :: Gates Setup [storyinit]
-<<createclue "first-clue" 1 "Clue 1">>
-<<createclue "second-clue" 2 "Clue 2">>
+<<CreateClue "first-clue" 1 "Clue 1">>
+<<CreateClue "second-clue" 2 "Clue 2">>
 
 :: Clue 1
 This is a clue
