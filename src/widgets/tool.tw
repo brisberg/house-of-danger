@@ -2,6 +2,7 @@
 <<nobr>>
   <<widget "PickupTool">>
     <<pickup '$tools' $args[0]>>
+    <<RefreshInventory>>
     <<Tool $args[0] "Tooltip Desc">>
   <</widget>>
 

@@ -3,7 +3,19 @@
 	<hr>
 	Psychic Level: $psychicLevel
 	Danger Level: $dangerLevel
-	Tools: <<ShowInventory '$tools'>>
-	Items: <<ShowInventory '$items'>>
-	Premonitions: <<ShowInventory '$premonitions'>>
+	<div id="inventory-footer"><<include "InventoryFooter">></div>
 <</if>>
+
+
+:: InventoryFooter
+Tools: <<ShowInventory '$tools'>>
+Items: <<ShowInventory '$items'>>
+Premonitions: <<ShowInventory '$premonitions'>>
+
+
+:: Inventory Widgets [widget]
+<<nobr>>
+	<<widget "RefreshInventory">>
+		<<replace "#inventory-footer">><<include "InventoryFooter">><</replace>>
+	<</widget>>
+<</nobr>>

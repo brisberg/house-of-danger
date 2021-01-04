@@ -9,10 +9,12 @@
 If you walk through the wooden gate, go to [[Story Card 21|Cemetery]].
 If you head across the field towards the manor's front door, go to [[Story Card 3|Mine Field]].
 
+
 :: Bush Garden Setup [storyinit]
 <<CreateClue "hedge-trimmer" 5 "Clue 5">>
 <<CreateItem 'hedgetrimmer' '$ Hedge Trimmers' '$ A rusty set of hedge trimmers'>>
 
+
 :: Clue 5
 You find a set of hedge trimmers.
-<<pickup '$tools' 'hedgetrimmer'>>
+<<PickupTool 'hedgetrimmer'>>
