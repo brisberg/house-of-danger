@@ -1,0 +1,29 @@
+:: Pool
+  It's obvious that nobody has cleaned the pool in ages. The water is a murky green, and the surface is littered with leaves and branches. Ripples pulse outwards from the center of the pool.
+  Out of nowhere, you hear a commotion. You look around and wonder if it's coming from inside the pool house nearby. Then you see movement on top of the gazebo in the distance. Someone--or something--is engaged in a struggle up there. Maybe they need your help! Then again, if you offer assistance you might end up needing help yourself!
+
+<<Challenge 'investigate-pool' 'Search Pool S' 'Search Pool F'>>
+
+If you go to the pool house, go to [[Story Card 11|Pool House]].
+If you go straight to the action at the gazebo, go to [[Story Card 9|Gazebo]].
+
+
+:: Pool Setup [storyinit]
+<<CreateClue 'pool-ripples' 8 'Pool Ripples'>>
+<<CreateItem 'orb' 'Whirring Metal Sphere' 'A metalic orb which softly glows and vibrates when a button on the side is pressed.'>>
+
+:: Search Pool S
+<<Clue 'pool-ripples'>>
+<<AdjustDangerLevel -2>>
+
+:: Search Pool F
+  You dive into the pool, but are unable to locate the source of the ripples and must come up for air.
+  The sound of your splashing may have attacted unwanted attention.
+<<AdjustDangerLevel 2>>
+/% TODO: Repeatable %/
+
+:: Pool Ripples
+  You walk down the steps into the water and see what's making the waves: a strange, whitting metal sphere, slightly bigger than a softball. You impulsively grab it.
+  The sphere vibrates in your hand. There are two buttons on it. You press one. Nothing happens. You press the other button. The sphere continues to vibrate. Insinctively, you press both buttons at the same time. The sphere stops moving and begins to glow.
+<<PickupItem 'orb'>>
+<<AdjustPsychicLevel 3>>

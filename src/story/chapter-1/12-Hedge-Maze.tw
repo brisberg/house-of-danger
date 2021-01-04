@@ -1,5 +1,17 @@
 :: Hedge Maze
-  You get lost in the hedge maze. Forever.
+  The hedge maze is massive. It's thick hedge walls are twice as tall as you but don't seem stable enough to climb, so you'll have to solve this labyrinth the old-fashioned way! You take a deep breath to steady your nerves and head through the maze's entrance.
 
-/% TODO: Fill out from here %/
-<<TheEnd>>
+// Image of Hedge Maze entrance //
+
+You can <<choice 'first-left' 'go Left'>>, or <<choice 'first-right' 'go Right'>>
+
+:: first-left
+You made it! Go to [[Story Card 18|Hedge Maze Exit]].
+
+:: first-right
+You made a wrong turn!
+<<AdjustDangerLevel 2>>
+
+<<linkappend 'Retrace your steps.'>>
+  <<include 'first-left'>>
+<</linkappend>>

@@ -1,0 +1,35 @@
+:: Gazebo Roof
+  You stand on the gazebo's railing, steadying yourself by gripping an ornate post holding up the roof. The rumbling above sounds and feels frightening-- what are you getting yourself into?
+  Reluctant to barge into the middle of this situation, you raise yourself just enough for a peek and discover that there is no one on the gazebo roof. The commotion is actually a large satellite dish, broken into three pieces. The big, jagged fragments are still connected to the base by wires, and the violent winds are spinning them in a circle with great force.
+  Flailing wildly like an angry octopus, the satellite dish almost hits you in the face. You might be able to grab a piece zooming by.
+
+<<Challenge 'grab-satellite' 'Grab Satellite S' 'Grab Satellite F'>>
+/% TODO: Mark the above challenge required %/
+
+
+:: Grab Satellite S
+<<Clue 'got-satellite-fragment'>>
+
+:: Grab Satellite F
+<<Clue 'missed-satellite-fragment'>>
+
+
+:: Gazebo Roof Setup [storyinit]
+<<CreateClue 'got-satellite-fragment' 22 'Got Satellite Fragment'>>
+<<CreateClue 'missed-satellite-fragment' 17 'Missed Satellite Fragment'>>
+<<CreateItem 'satellite' 'Satellite Dish' 'A broken chunk of a Satellite Dish. An engraving on it reads PLANET OF CRYSTALS'>>
+
+
+:: Got Satellite Fragment
+  You hold on to the top of the gazebo with one hand and time your lunge perfectly--you snag a chunk of the whirling satellite dish.
+  The piece appears to be made by hand. An engraving on it reads PLANET OF CRYSTALS.
+<<PickupItem 'satellite'>>
+<<AdjustPsychicLevel 1>>
+Go to [[Story Card 30|Marsden House]].
+
+
+:: Missed Satellite Fragment
+  Your fingertips graze a piece of the satellite dish, but you can't quite grab it. You reach too far, lose your balance, and tumble from the gazebo and down a short hill.
+  Your confusion from the fall slowly subsides, and you hear the sound of a beautiful violin nearby. You stumble off in the direction of the music.
+<<AdjustDangerLevel 2>>
+Go to [[Story Card 17|Stable]].

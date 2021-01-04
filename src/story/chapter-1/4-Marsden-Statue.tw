@@ -9,14 +9,12 @@
 <<Challenge 'inspect-statue' 'Search Statue S' 'Search Statue F'>>
 <<Challenge 'climb-statue' 'Climb Statue S' 'Climb Statue F'>>
 
-<<run console.log(setup.AllClues)>>
-
 If you enter the hedge maze, go to [[Story Card 12|Hedge Maze]].
 If you visit the cemetery, go to [[Story Card 21|Cemetery]].
 
 
 :: Search Statue S
-<<Clue 'statue-history'>>
+<<Clue 'statue-secret-passage'>>
 
 :: Search Statue F
 <<AdjustDangerLevel 1>>
@@ -31,16 +29,18 @@ You slip while trying to comine the statue, with a clanging sound which may have
 
 
 :: Marsden Statue Setup [storyinit]
-<<CreateClue 'statue-history' 18 'Extended History'>>
+<<CreateClue 'statue-secret-passage' 18 'Statue Secret Passage'>>
 <<CreateClue 'find-saber' 2 'Find Cavalry Saber'>>
 <<CreateItem 'saber' 'Cavalry Saber' 'A gleaming cavalry saber in surprisingly good condition'>>
 
 
-:: Extended History
-/% TODO: Fill in Clue 18 %/
-This is the extended history of Henry Marsden. He died in a fire at the Prison.
+:: Statue Secret Passage
+  When you inadvertently press a hidden switch, the statue slides to one side, revealing a cement passage.
+
+Or... If you want to see where the hidden passage leads, go to [[Story Card 28|Tunnel]].
 
 
 :: Find Cavalry Saber
-You climb the statue and sucessfully retrieve a <<Tool 'Cavalry Saber'>>.
+  The <<Tool 'Cavalry Saber'>> comes loose in your hand. It's heavy and quite sharp.
 <<PickupTool 'saber'>>
+<<AdjustPsychicLevel 2>>

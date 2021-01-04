@@ -1,0 +1,12 @@
+:: Gazebo
+  You sprint to the gazebo, practically pushed along by the winds that are picking up. A light sprinkling of rain spatters the ground as you run.
+  You make it to the shelter of the structure, and the mayhem occuring above you on the roof increases in intensity.
+  Who is up there, and what are they doing? you wonder.
+  You notice a drive way about twenty feet away.
+
+// Image of rain falling //
+
+<<FindPremonition 'locked-door' 6>>
+
+If you climb to the top of the gazebo, go to [[Story Card 10|Gazebo Roof]].
+If you run to the driveway, go to [[Story Card 30|Marsden House]].

@@ -1,0 +1,27 @@
+:: Flooded Tunnel
+  Mustering all the courage you can, you dive into the watery tunnel. There is just enough room in the tunnel above the water for you to lift your head between strokes and take a breath.
+  Eventually, the tunnel drops lower and lower until it's completely submerged under water. You hold your breath, dive down, and look around: after about thirty feet, the tunnel opens up to a bigger body of water--a pond or pool--with sunlight beaming into it. You pop up for air. Well, I've come this far, you think. You're ready to chance it. You take a deep breath and dive back down.
+  You get ten feet in... fifteen feet in... twenty-five feet in... Just as you're about to exit the underwater tunnel, something tugs your leg. You can't tell if it's an animal or if you're caught in an underwater vine.
+
+// Image of bubbles under water //
+
+<<Challenge 'underwater-vine' 'Underwater Escape S' 'Underwater Escape F'>>
+
+
+:: Flooded Tunnel Setup [storyinit]
+<<CreateClue 'underwater-escape' 20 'Underwater Escape Clue'>>
+
+:: Underwater Escape Clue
+  The thing--whatever it is--wraps more tightly around your leg. It's pulling you down! Another tendril (or tentable?) slides around your neck. You pry it off, and with the last of your strength, you give a powerful kick, and you're free. Just like that, the thing is gone. You emerge into a swimming pool with a lush pool house next to it.
+
+:: Underwater Escape S
+<<Clue 'underwater-escape'>>
+<<AdjustDangerLevel -2>>
+Proceed to [[Story Card 23|Pool]].
+
+:: Underwater Escape F
+You flail about trying to wrench yourself free, but the creature--or whatever it is--holds your ankle fast.
+<<AdjustDangerLevel 4>>
+
+/% Make this a repeatable attempt %/
+<<TheEnd>>

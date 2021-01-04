@@ -1,0 +1,25 @@
+:: Ditch
+  You land in the ditch, splashing into shallow, frigid water. At this point, you notice a large grate ahead of you, which partially blocks the entrance to a dark, cement culvert that the water flows into. If you vend over, you could walk under the lower run of the grate and enter the culvert.
+  You then see a small piece of paper drifting by you in the water. You might be able to grab it if you act fast.
+
+// Image of paper on an outdoor pool of water. //
+
+<<Challenge 'grab-map' 'Grab Map S' 'Grab Map F'>>
+
+Along side of the ditch is a dusty path leading towards what appears to be an elaborate hedge maze.
+
+If you enter the culvert, go to [[Story Card 28|Tunnel]].
+If you enter the hedge maze, go to [[Story Card 12|Hedge Maze]].
+
+
+:: Ditch Setup [storyinit]
+<<CreateItem 'hedgemap' 'Map of the Hedge Maze' 'A map of the hedge maze. Showing the shortest path through is left, right, left.'>>
+
+:: Grab Map S
+You swiftly pluck the paper from the water! On closer examination it appears to be a map of the nearby hedge maze.
+<<PickupItem 'hedgemap'>>
+<<AdjustPsychicLevel 1>>
+
+:: Grab Map F
+You are too slow to react, and miss the piece of paper by inches. The paper blissfully drifts into the culvert and is lost from sight.
+<<AdjustDangerLevel 1>>

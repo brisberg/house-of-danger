@@ -1,0 +1,23 @@
+:: Items [widget]
+<<nobr>>
+  <<widget "PickupItem">>
+    <<pickup '$items' $args[0]>>
+    <<RefreshInventory>>
+    <<Item $args[0] "Tooltip Desc">>
+  <</widget>>
+
+  /% Item display Macro
+    Takes a Item name and tooltip and prints the name with the tooltip on hover.
+
+    @param string Item name
+    @param string Tooltip Text
+  %/
+  <<widget "Item">>
+    <span class='tooltip item'>
+      $args[0]
+      <span class='tooltip-bottom tooltiptext'>
+        $args[1]
+      </span>
+    </span>
+  <</widget>>
+<</nobr>>

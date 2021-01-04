@@ -1,0 +1,18 @@
+:: Courtyard
+  You climb down the gnarled vine into a walled courtyard beside an outbuilding that appears to be the servants' quarters. The door is slightly ajad, but you are unsure if anyone is inside. In the courtyard there is a small table with a cigar box sitting on top of it. There is also a path that leads out of the courtyard and up to the side of the mansion.
+
+// Image of Cigar Box //
+
+<<Clue 'cigarbox'>>
+
+If you approach the door to the servants' quarters, go to [[Story Card 6|Servants Quarters]].
+If you run to the side of the mansion, go to [[Story Card 20|House Side]].
+
+
+:: Courtyard Setup [storyinit]
+<<CreateClue 'cigarbox' 15 'Cigar Box'>>
+<<CreateItem 'flashlight' 'Flashlight' 'A sturdy metal flashlight.'>>
+
+:: Cigar Box
+The cigar box contains a flashlight. You check and discover that it has no batteries.
+<<PickupTool 'flashlight'>>

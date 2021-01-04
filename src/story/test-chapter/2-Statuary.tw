@@ -7,7 +7,7 @@ You stand in a statue garden. There is a soldier statue with a gleaming sword in
 <<Clue 2 "2-Clue">>
 
 [[Option 1|House Door]]: Knock on the house door.
-[[Option 2|Hedge Maze]]: Visit the Hedge Maze.
+[[Option 2|Test Hedge Maze]]: Visit the Hedge Maze.
 
 <<FindPremonition 'hedge-maze' 5>>
 

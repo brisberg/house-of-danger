@@ -1,0 +1,18 @@
+:: Hedge Maze Exit
+  You finally come to the end of the hedge maze. It exits towards a pool house. A short stone pedestal stands in front of you with a metal lockbox on top. Perhaps someone wants to reward you for navigating that accursed maze, though the whole thing does seem suspicous.
+  Looking towards the pool house, you see its door is barely hanging from its hinges. There is also a gate that leads--you assume--directly to the pool.
+
+<<Clue 'lockbox'>>
+
+If you explore the pool house, go to [[Story Card 11|Pool House]].
+If you walk through the gate to check out the pool, go to [[Story Card 23|Pool]].
+
+
+:: Hedge MAze Edit Setup [storyinit]
+<<CreateClue 'lockbox' 3 'Lockbox Clue'>>
+<<CreateItem 'truck-key' 'Truck Key' 'Ignitian key to a truck of some kind.'>>
+
+:: Lockbox Clue
+  Not only is the lockbox open, but inside you find a key to a truck.
+<<PickupItem 'truck-key'>>
+<<AdjustPsychicLevel 2>>

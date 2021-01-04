@@ -1,0 +1,25 @@
+:: Guardhouse
+  You were lucky to escape the creature, but you know it's still out there... somewhere. You run into the old guardhouse, which is a small room with several TV monitors flashing black-and-white images of various places on the estate grounds. Some monitors are broken, and shards of glass are scattered across the dest and the wood floors.
+  A hefty book titled //History of Nothwin// is lying on the desk. Curious, you look up the name "Marsden, Henry" in the index. Sure enough, it references an entry on Page 93. Your heard races as you turn there to read his bio:
+
+  //Henry Marsden, born 1839, died 1887. General in the Union Army during the Civil War. Severely wounded at the Battle of Shiloh in 1862. Appointed warden of Hedge Brook Prison in 1880. Rumored to have been killed in the Prison Riot Fire of 1887.//
+
+  //Not a popular guy//, you think.
+  The desk has three drawers--maybe there's something useful inside. A wooden ladder leads up to a hatch in the roof. Through a window filled with cobwebs you can see an open field that leads to the manor's front door. You consider what to do next.
+
+<<Challenge 'search-guardhouse' 'Search Guardhouse S' 'Search Guardhouse F'>>
+
+If you climb the ladder to the hatch in the roof, go to [[Story Card 27|Guardhouse Roof]].
+If you crawl through the window and run for the front door of the house, go to [[Story Card 3|Mine Field]].
+
+
+:: Guardhouse Setup [storyinit]
+<<CreateItem 'battery1' '9Volt Battery' 'A standard battery which could power a flashlight. Or a Taser. Or who knows what else.'>>
+
+:: Search Guardhouse S
+In the top drawer you find a 9Volt Battery.
+<<PickupItem 'battery1'>>
+
+:: Search Guardhouse F
+You spend some time earching the desk but find nothing of interest.
+<<AdjustDangerLevel 1>>

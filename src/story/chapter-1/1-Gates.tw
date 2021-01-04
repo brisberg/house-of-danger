@@ -3,7 +3,7 @@
   Even though the air is balmy, a chill travels down your spine. The gathering clouds on the horizon hint at a brewing summer thunderstorm.
 
 If you search the wall for a way in, go to [[Story Card 13|Statuary]].
-If you climb the gate, go to [[Story Card 7|]].
+If you climb the gate, go to [[Story Card 7|Gatehouse]].
 
 /% Initial starting items %/
 <<pickup '$items' 'waterbottle'>>

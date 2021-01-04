@@ -1,0 +1,9 @@
+:: Tunnel
+  You creep through the darkness and find the cement walls end as natural stone and earth begin. Occasional vents to the surface let in just barely enough light to see by. Ahead you glimpse the warm firelight of torches.
+  You come to a fork in the tunnel, lit by the dancing flames. One tunnel descends deeper and is half-filled with water. You could swim through it, but you can't see where the tunnel leads or how far it goes.
+  Another tunnel looks partially caved in. Tiny clumps of earth periodically fall from the ceiling as you approach this tunnel, and several of the supports that hold the walls up have gaping cracks in them.
+
+// Image of dark tunnel lit by ceiling grates //
+
+If you dive into the water-filled tunnel, go to [[Story Card 22|Flooded Tunnel]].
+If you explore the partially collapsed tunnel, go to [[Story Card 16|Tunnel Collapse]].

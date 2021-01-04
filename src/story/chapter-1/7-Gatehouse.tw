@@ -1,0 +1,32 @@
+:: Gatehouse
+  You pull yourself over the rusting gate and land with a CRUNCH on the gravel driveway leading toward the house. But before you can survey your surroundings, you hear a guttural sound coming from your left.
+  You encounter a shadowy, hunched-over figure emerging from the darkened doorway of a decrepit gatehouse. You can just barely make out eyes and white fangs dripping with saliva.
+  The figure crouches, as if to spring forward at any moment.
+  "Who's th-there?" you stammer.
+  Suddenly, the creature lunches at you, snarkling. You spot a guardhouse not far away. If you can get past the creature, you might be able to hide there. Or perhaps you should just turn and flee up the driveway towards the main house!
+
+// Image of a dark, hairy silhouette in a gate house in front of the manor. //
+
+<<Challenge 'fight-creature' 'Fight Creature S' 'Fight Creature F'>>
+
+If you run into the guardhouse, go to [[Story Card 19|Guardhouse]].
+If you run up the driveway, go to [[Story Card 8|Driveway]].
+
+
+:: Gatehouse Setup [storyinit]
+<<CreateClue 'find-binoculars' 10 'Find Binoculars'>>
+<<CreateItem 'binoculars' 'High-powered Binoculars' 'A pair of new, high-powered binoculars.'>>
+
+:: Fight Creature S
+It's probably unwise to engage such a savage beast in combat, but Danger is your middle name. You land a few quick jabs on the creature before it can react, and then you throw it to the ground. You stand there for a moment, your confidence high. Then, the creature leaps to its feet and rushes you. You managed to win Round One, but you're in no hurry to start Round Two, so you race for the shadows beside a big boulder before the creature can get its hands on you.
+<<Clue 'find-binoculars'>>
+
+:: Fight Creature F
+The creature is much stronger and faster than you. You try to fight it off, but it grabs you and tosses you like a ragdoll towards the house.
+You scramble to your feet, and have a chance to escape!
+<<AdjustDangerLevel 2>>
+
+:: Find Binoculars
+You find a pair of binoculars in the shadows. With the creature on the loose, you can't hide here forever.
+<<PickupTool 'binoculars'>>
+Run into the guardhouse, go to [[Story Card 19|Guardhouse]].

@@ -1,0 +1,15 @@
+:: Marsden House
+  You appear in a driveway, which leads you to the manson's entrance. On the door is a plauqe that reads MARSDEN and a large crystal doorknocker, which seems newer than everything else on the front of the building. You knock loudly, many times. But there is no answer. The storm is really picking up now. You try the doorknob and are surprised to find that the door is unlocked.
+  You've been lucky enough so far, but you wonder if you've missed something. Beforeyou enter the house, you look back. You can see a few clear paths. One leads towards a statuary, another to a small cemetery. Two more paths stretch out towards a watery ditch with a gate and the house's luxurious pool. You could go back to explore if you want.
+
+/% TODO: Implement story return? Or remove that from the card description. %/
+Story Return
+  There are items in this chapter that will be useful later in the story. You can take a risk and go back for any you missed by following the choices below.
+  If you head to the cemetery, raise Danger Meter by two and go to Story Card 21.
+  If you head to the statuary, raise Danger Meter by two and go to Story Card 4.
+  If you head to the ditch, raise Danger Meter by two and go to Story Card 26.
+  If you head to the pool, raise Danger Meter by two and go to Story Card 23.
+
+  Otherwise you may advance to Chapter Two. Keep all inventory Items. (Coming Soon!)
+
+<<TheEnd>>

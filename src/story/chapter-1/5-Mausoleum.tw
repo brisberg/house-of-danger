@@ -1,0 +1,42 @@
+:: Mausoleum
+  The mausoleum interior feels musty and cool. Something is dripping from the ceiling and landing in the corner with a PLINK, which is odd, given that it hasen't started raining yet. You also notice the mausoleum is bigger on the inside than the outside suggested. A stone sarcophagus lies before you in the center of the chamber with the word MARSDEN carved into it.
+  It appears that others have been in the mausoleum recently: there's a freshly dug pit to the side of the sarcophagus, and an elaborate tunnel has been dug into the ground beside the bearby wall. You can see that the tunnel is lined with cement.
+
+<<Challenge 'search-sarcophagus' 'Search Sarcophagus S' 'Search Sarcophagus F'>>
+
+<<Challenge 'open-sarcophagus' 'Open Sarcophagus S' 'Open Sarcophagus F'>>
+
+If you climb into the pit, go to [[Story Card 16|Tunnel Collapse]].
+If you travel through the tunnel, go to [[Story Card 28|Tunnel]].
+
+
+:: Mausoleum Setup [storyinit]
+<<CreateClue 'mausoleum-secret-passage' 24 'Mausoleum Secret Passage'>>
+<<CreateItem 'wooden-dowel' 'Large Wooden Dowel' 'Used as a leaver to assist with strength challenges.'>>
+
+:: Search Sarcophagus S
+  Beside the sarcophagus you find a <<Tool 'Wooden Dowel'>>. This may come in handy.
+<<PickupTool 'wooden-dowel'>>
+<<AdjustPsychicLevel 1>>
+
+:: Search Sarcophagus F
+  You spend a few min searching around the sarcophagus but do not find anything of interest.
+<<AdjustDangerLevel 1>>
+/% TODO: Make this retriable %/
+
+:: Open Sarcophagus S
+  It takes some muscle, but you manage to remove the lid and are surprised to find that not only is there no body, but an opening to a secret passageway offers yet another way out of the mausoleum.
+
+Or... To take the secret passageway:
+<<Clue 'mausoleum-secret-passage'>>
+
+:: Mausoleum Secret Passage
+  You travel through the tunnel for what feels like forever. The light disappears, and the tunnel eventually ends. You feel frightened and trapped. You want to run back and try the other routes out of the mausoleum.
+  Before you go, you feel around in the dark. There's nothing in front of you or to your sides. But you discover a mossy hatch in the tunnel ceiling. You turn the handle, and the hatch opens on to a grassy patch at the entrance to a hedge maze.
+
+Proceed to [[Story Card 12|Hedge Maze]]
+
+:: Open Sarcophagus F
+  You attempt to open the sarcophagus, but try as you might the stone lid will not budge.
+  The commotion may have attracted unwanted attention.
+<<AdjustDangerLevel 2>>

@@ -1,0 +1,26 @@
+:: Guardhouse Roof
+  You scramble up the ladder, through the hatch, and onto the guardhouse's decaying tile roof. It seems to be on the verge of collapsing, but you find a spot that you are reasonably sure won't cave in when you put your weight on it.
+  Across the dangerously unstable roof from where you crouch uneasily, you can see a pile of construction materials, probably left over by contractors working on the roof. Among the material is a first aid kit, but navigating the length of the roof to reach it will be perilous. One wrong step and you could stumble off the roof, into a ditch you see below.
+  Near you is a thick vine that you could climb down to reach a courtyard, and not too far from you is a long board someone has laid between the roof and a nearby greenhouse, which seems to be sturdier than the guardhouse.
+
+// Image vines on a brick wall //
+
+<<Challenge 'cross-guardroof' 'Cross Guardroof S' 'Cross Guardroof F'>>
+
+If you cross to the greenhouse, go to [[Story Card 29|Wood Bridge]].
+If you climb down the vine, go to [[Story Card 14|Courtyard]].
+
+
+:: Guardhouse Roof Setup [storyinit]
+<<CreateItem 'firstaid-kit' 'First Aid Kit' 'A fully stocked First Aid Kit. Discard to lower Danger Meter by 4.'>>
+
+:: Cross Guardroof S
+You deftly manuver your way across the diplidated roof, and make your way to the first aid kit.
+After retrieving your spoils, you retrace your steps back to the more stable section of the roof.
+<<PickupItem 'firstaid-kit'>>
+
+:: Cross Guardroof F
+The unstable roof is more treacherous than you thought! After a few careful steps the rotting boards give way and send you tumbling into the ditch below.
+<<AdjustDangerLevel 2>>
+Proceed to [[Story Card 26|Ditch]].
+/% TODO: Make this story choice required on a failure %/
