@@ -1,6 +1,6 @@
 # House of Danger
 
-Choose your own adventure game to uncover the mystery of a creepy, futuristic house
+Choose your own adventure game to uncover the mystery of a creepy, futuristic house.
 
 ## Toolchain
 

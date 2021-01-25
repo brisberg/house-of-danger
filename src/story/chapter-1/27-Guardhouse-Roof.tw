@@ -15,7 +15,7 @@ If you climb down the vine, go to [[Story Card 14|Courtyard]].
 <<CreateItem 'firstaid-kit' 'First Aid Kit' 'A fully stocked First Aid Kit. Discard to lower Danger Meter by 4.'>>
 
 :: Cross Guardroof S
-You deftly manuver your way across the diplidated roof, and make your way to the first aid kit.
+You deftly manuever your way across the dilapidated roof, and make your way to the first aid kit.
 After retrieving your spoils, you retrace your steps back to the more stable section of the roof.
 <<PickupItem 'firstaid-kit'>>
 

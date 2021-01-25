@@ -22,7 +22,7 @@ If you travel through the tunnel, go to [[Story Card 28|Tunnel]].
 :: Search Sarcophagus F
   You spend a few min searching around the sarcophagus but do not find anything of interest.
 <<AdjustDangerLevel 1>>
-/% TODO: Make this retriable %/
+/% TODO: Make this re-triable %/
 
 :: Open Sarcophagus S
   It takes some muscle, but you manage to remove the lid and are surprised to find that not only is there no body, but an opening to a secret passageway offers yet another way out of the mausoleum.

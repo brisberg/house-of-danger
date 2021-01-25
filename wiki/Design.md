@@ -2,11 +2,11 @@
 
 House of Danger is based on the game rules from the [House of Danger](https://boardgamegeek.com/boardgame/251420/choose-your-own-adventure-house-danger) board game.
 
-This is a choose-your-own-adventure story game involving branching story paths, and random dice rolls to resolve encounters. The story itself is static, so repeated play throughs will be the same events.
+This is a choose-your-own-adventure story game involving branching story paths, and random dice rolls to resolve encounters. The story itself is static, so repeated playthroughs will be the same events.
 
 ## Twine Constructs
 
-It looks like the simplest way to provide passage snippet templates is to use the Widgets API. This allows you to define a set of widgets in a `widget` tagged passage which can be reused like a normal macro elsewhere. These widgets can recieve an array of arguments, making it possible to produce dynamic content.
+It looks like the simplest way to provide passage snippet templates is to use the Widgets API. This allows you to define a set of widgets in a `widget` tagged passage which can be reused like a normal macro elsewhere. These widgets can receive an array of arguments, making it possible to produce dynamic content.
 
 ### Clue Widget
 
@@ -16,7 +16,7 @@ Sometimes clues will have other mechanisms, challenges, extra story transfers, e
 
 ### Premonition Widget
 
-Premonition is a sub-type of clue widget. This will check if you have the appropriate Psycic level, and then display an image in line.
+Premonition is a sub-type of clue widget. This will check if you have the appropriate Psychic level, and then display an image in line.
 
 ### Challenge Widget
 
@@ -26,7 +26,7 @@ Player can choose to use a `tool` item to assist in the challenge.
 
 ### Goal Widget
 
-Specialied clue widget. Displays the goal for the current challenge.
+Specialized clue widget. Displays the goal for the current challenge.
 
 ### Score Variables
 
@@ -48,7 +48,7 @@ These should be accompanied by passages to inspect all items in the inventory.
 
 ## Graphics
 
-I think it would be nice if there was a muted color background around clues. Kinda like they are stickynotes or parchment which scroll out to display the clue text.
+I think it would be nice if there was a muted color background around clues. Kinda like they are sticky notes or parchment which scroll out to display the clue text.
 
 There should be some images in here eventually to match the ones from the game.
 

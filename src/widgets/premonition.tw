@@ -1,8 +1,8 @@
 :: Premonitions [widget]
 <<nobr>>
   /% FindPremonition Macro
-    If the player has enough Psychic Level to recieve the premonition, this macro
-    display text about aquiring the premonition and adds it to the player inventory.
+    If the player has enough Psychic Level to receive the premonition, this macro
+    display text about acquiring the premonition and adds it to the player inventory.
 
     @param string Premonition name
     @param number Minimum Psychic Level
@@ -13,7 +13,7 @@
       <<pickup '$premonitions' $args[0]>>
     <<else>>
       You sense fleeting impressions of a Psychic Premonition, but your Psychic
-      Sentitivity is not high enough to make any sense of it.
+      Sensitivity is not high enough to make any sense of it.
     <</if>>
   <</widget>>
 

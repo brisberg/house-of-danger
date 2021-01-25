@@ -12,7 +12,7 @@
 <<CreateClue 'underwater-escape' 20 'Underwater Escape Clue'>>
 
 :: Underwater Escape Clue
-  The thing--whatever it is--wraps more tightly around your leg. It's pulling you down! Another tendril (or tentable?) slides around your neck. You pry it off, and with the last of your strength, you give a powerful kick, and you're free. Just like that, the thing is gone. You emerge into a swimming pool with a lush pool house next to it.
+  The thing--whatever it is--wraps more tightly around your leg. It's pulling you down! Another tendril (or tentacle?) slides around your neck. You pry it off, and with the last of your strength, you give a powerful kick, and you're free. Just like that, the thing is gone. You emerge into a swimming pool with a lush pool house next to it.
 
 :: Underwater Escape S
 <<Clue 'underwater-escape'>>

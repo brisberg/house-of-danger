@@ -23,7 +23,7 @@
       $(document).trigger({
           type       : (cont === 'initialized') ?  ':inventory-init' : ':inventory-update', // the event name
           instance   : inv, // the calling instance; the giver in transfers
-          receiving  : loc, // the inventory recieving transfers, or null
+          receiving  : loc, // the inventory receiving transfers, or null
           moved      : items, // the items moved to or from the calling inventory, or null
           context    : cont // drop, pickup, transfer, or initialized
       });
@@ -55,7 +55,7 @@
       if (this instanceof Inventory) {
           this.inv = array;
           array = (array.length) ? array : null;
-          // run the event only if assignement is successful
+          // run the event only if assignment is successful
           _attachEvent(this, null, array, 'initialized');
       } else { // if the author forgets the 'new' operator, add it for them
           return new Inventory(array);

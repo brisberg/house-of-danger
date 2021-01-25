@@ -10,7 +10,7 @@ If you go straight to the action at the gazebo, go to [[Story Card 9|Gazebo]].
 
 :: Pool Setup [storyinit]
 <<CreateClue 'pool-ripples' 8 'Pool Ripples'>>
-<<CreateItem 'orb' 'Whirring Metal Sphere' 'A metalic orb which softly glows and vibrates when a button on the side is pressed.'>>
+<<CreateItem 'orb' 'Whirring Metal Sphere' 'A metallic orb which softly glows and vibrates when a button on the side is pressed.'>>
 
 :: Search Pool S
 <<Clue 'pool-ripples'>>
@@ -18,12 +18,12 @@ If you go straight to the action at the gazebo, go to [[Story Card 9|Gazebo]].
 
 :: Search Pool F
   You dive into the pool, but are unable to locate the source of the ripples and must come up for air.
-  The sound of your splashing may have attacted unwanted attention.
+  The sound of your splashing may have attracted unwanted attention.
 <<AdjustDangerLevel 2>>
 /% TODO: Repeatable %/
 
 :: Pool Ripples
-  You walk down the steps into the water and see what's making the waves: a strange, whitting metal sphere, slightly bigger than a softball. You impulsively grab it.
-  The sphere vibrates in your hand. There are two buttons on it. You press one. Nothing happens. You press the other button. The sphere continues to vibrate. Insinctively, you press both buttons at the same time. The sphere stops moving and begins to glow.
+  You walk down the steps into the water and see what's making the waves: a strange, whirring metal sphere, slightly bigger than a softball. You impulsively grab it.
+  The sphere vibrates in your hand. There are two buttons on it. You press one. Nothing happens. You press the other button. The sphere continues to vibrate. Instinctively, you press both buttons at the same time. The sphere stops moving and begins to glow.
 <<PickupItem 'orb'>>
 <<AdjustPsychicLevel 3>>

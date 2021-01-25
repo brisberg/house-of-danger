@@ -11,5 +11,5 @@ If you climb the gate, go to [[Story Card 7|Gatehouse]].
 
 
 :: Initial Inventory [storyinit]
-<<CreateItem 'waterbottle' 'Waterbottle' 'An Old Waterbottle'>>
+<<CreateItem 'waterbottle' 'Water Bottle' 'An Old Water Bottle'>>
 <<CreateItem 'pocketknife' 'Pocketknife' 'You old, trust pocketknife.'>>
