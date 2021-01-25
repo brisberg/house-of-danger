@@ -127,7 +127,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://260CDEE1-174A-4AA6-85B8-13776FABFD3A// --><tw-storydata name="House of Danger" startnode="102" creator="Tweego" creator-version="2.1.1" ifid="260CDEE1-174A-4AA6-85B8-13776FABFD3A" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "chapter-title.css" */
+	<!-- UUID://260CDEE1-174A-4AA6-85B8-13776FABFD3A// --><tw-storydata name="House of Danger" startnode="87" creator="Tweego" creator-version="2.1.1" ifid="260CDEE1-174A-4AA6-85B8-13776FABFD3A" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "chapter-title.css" */
 .title {
   text-align: center;
 }
@@ -375,7 +375,7 @@ Macro.add('CreateItem', {
       $(document).trigger({
           type       : (cont === 'initialized') ?  ':inventory-init' : ':inventory-update', // the event name
           instance   : inv, // the calling instance; the giver in transfers
-          receiving  : loc, // the inventory recieving transfers, or null
+          receiving  : loc, // the inventory receiving transfers, or null
           moved      : items, // the items moved to or from the calling inventory, or null
           context    : cont // drop, pickup, transfer, or initialized
       });
@@ -407,7 +407,7 @@ Macro.add('CreateItem', {
       if (this instanceof Inventory) {
           this.inv = array;
           array = (array.length) ? array : null;
-          // run the event only if assignement is successful
+          // run the event only if assignment is successful
           _attachEvent(this, null, array, 'initialized');
       } else { // if the author forgets the 'new' operator, add it for them
           return new Inventory(array);
@@ -939,7 +939,7 @@ If you climb the gate, go to [[Story Card 7|Gatehouse]].
 
 /% Initial starting items %/
 &lt;&lt;pickup &#39;$items&#39; &#39;waterbottle&#39;&gt;&gt;
-&lt;&lt;pickup &#39;$tools&#39; &#39;pocketknife&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Initial Inventory" tags="storyinit" position="725,100" size="100,100">&lt;&lt;CreateItem &#39;waterbottle&#39; &#39;Waterbottle&#39; &#39;An Old Waterbottle&#39;&gt;&gt;
+&lt;&lt;pickup &#39;$tools&#39; &#39;pocketknife&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Initial Inventory" tags="storyinit" position="725,100" size="100,100">&lt;&lt;CreateItem &#39;waterbottle&#39; &#39;Water Bottle&#39; &#39;An Old Water Bottle&#39;&gt;&gt;
 &lt;&lt;CreateItem &#39;pocketknife&#39; &#39;Pocketknife&#39; &#39;You old, trust pocketknife.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Gazebo Roof" tags="" position="850,100" size="100,100">You stand on the gazebo&#39;s railing, steadying yourself by gripping an ornate post holding up the roof. The rumbling above sounds and feels frightening-- what are you getting yourself into?
   Reluctant to barge into the middle of this situation, you raise yourself just enough for a peek and discover that there is no one on the gazebo roof. The commotion is actually a large satellite dish, broken into three pieces. The big, jagged fragments are still connected to the base by wires, and the violent winds are spinning them in a circle with great force.
   Flailing wildly like an angry octopus, the satellite dish almost hits you in the face. You might be able to grab a piece zooming by.
@@ -969,7 +969,7 @@ You can &lt;&lt;choice &#39;first-left&#39; &#39;go Left&#39;&gt;&gt;, or &lt;&l
 
 &lt;&lt;linkappend &#39;Retrace your steps.&#39;&gt;&gt;
   &lt;&lt;include &#39;first-left&#39;&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Statuary" tags="" position="850,225" size="100,100">Moving along the mossy stone wall that surrounds the property, you come across a jagged opening created by fallen rocks--it&#39;s just big enough for you to squeeze through. Once on the other side of the wall, you find yourself standing in a cobblestone plaza surrounded by markble and bronze figures. Most of the scultures depict men gazing off into the distance as if pondering the deeper meaning of it all, but at the edge of the courtyard is a monumental statue of a man atop a muscular steed.
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Statuary" tags="" position="850,225" size="100,100">Moving along the mossy stone wall that surrounds the property, you come across a jagged opening created by fallen rocks--it&#39;s just big enough for you to squeeze through. Once on the other side of the wall, you find yourself standing in a cobblestone plaza surrounded by marble and bronze figures. Most of the sculptures depict men gazing off into the distance as if pondering the deeper meaning of it all, but at the edge of the courtyard is a monumental statue of a man atop a muscular steed.
   To your right, a stony pathway leads away from the statuary and into a picturesque garden, where topiary bushes have been trimmed into whimsical shapes.
 
 // Image of Mounted Statue //
@@ -1004,15 +1004,15 @@ If you head across the field towards the manor&#39;s front door, go to [[Story C
 
 // Image of Violin playing Chimpanzee //
 
-If you leave the stable and run to the driveway, go to [[Story Card 30|Marseden House]].
-If you tiptoe through the gate to experience the full power of the performance, go to [[Story Card 24|Kennel]].</tw-passagedata><tw-passagedata pid="26" name="Hedge Maze Exit" tags="" position="725,350" size="100,100">You finally come to the end of the hedge maze. It exits towards a pool house. A short stone pedestal stands in front of you with a metal lockbox on top. Perhaps someone wants to reward you for navigating that accursed maze, though the whole thing does seem suspicous.
+If you leave the stable and run to the driveway, go to [[Story Card 30|Marsden House]].
+If you tiptoe through the gate to experience the full power of the performance, go to [[Story Card 24|Kennel]].</tw-passagedata><tw-passagedata pid="26" name="Hedge Maze Exit" tags="" position="725,350" size="100,100">You finally come to the end of the hedge maze. It exits towards a pool house. A short stone pedestal stands in front of you with a metal lockbox on top. Perhaps someone wants to reward you for navigating that accursed maze, though the whole thing does seem suspicious.
   Looking towards the pool house, you see its door is barely hanging from its hinges. There is also a gate that leads--you assume--directly to the pool.
 
 &lt;&lt;Clue &#39;lockbox&#39;&gt;&gt;
 
 If you explore the pool house, go to [[Story Card 11|Pool House]].
 If you walk through the gate to check out the pool, go to [[Story Card 23|Pool]].</tw-passagedata><tw-passagedata pid="27" name="Hedge MAze Edit Setup" tags="storyinit" position="850,350" size="100,100">&lt;&lt;CreateClue &#39;lockbox&#39; 3 &#39;Lockbox Clue&#39;&gt;&gt;
-&lt;&lt;CreateItem &#39;truck-key&#39; &#39;Truck Key&#39; &#39;Ignitian key to a truck of some kind.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Lockbox Clue" tags="" position="975,350" size="100,100">Not only is the lockbox open, but inside you find a key to a truck.
+&lt;&lt;CreateItem &#39;truck-key&#39; &#39;Truck Key&#39; &#39;Ignition key to a truck of some kind.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Lockbox Clue" tags="" position="975,350" size="100,100">Not only is the lockbox open, but inside you find a key to a truck.
 &lt;&lt;PickupItem &#39;truck-key&#39;&gt;&gt;
 &lt;&lt;AdjustPsychicLevel 2&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Guardhouse" tags="" position="1100,350" size="100,100">You were lucky to escape the creature, but you know it&#39;s still out there... somewhere. You run into the old guardhouse, which is a small room with several TV monitors flashing black-and-white images of various places on the estate grounds. Some monitors are broken, and shards of glass are scattered across the dest and the wood floors.
   A hefty book titled //History of Nothwin// is lying on the desk. Curious, you look up the name &quot;Marsden, Henry&quot; in the index. Sure enough, it references an entry on Page 93. Your heard races as you turn there to read his bio:
@@ -1026,13 +1026,13 @@ If you walk through the gate to check out the pool, go to [[Story Card 23|Pool]]
 
 If you climb the ladder to the hatch in the roof, go to [[Story Card 27|Guardhouse Roof]].
 If you crawl through the window and run for the front door of the house, go to [[Story Card 3|Mine Field]].</tw-passagedata><tw-passagedata pid="30" name="Guardhouse Setup" tags="storyinit" position="1225,350" size="100,100">&lt;&lt;CreateItem &#39;battery1&#39; &#39;9Volt Battery&#39; &#39;A standard battery which could power a flashlight. Or a Taser. Or who knows what else.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Search Guardhouse S" tags="" position="100,475" size="100,100">In the top drawer you find a 9Volt Battery.
-&lt;&lt;PickupItem &#39;battery1&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Search Guardhouse F" tags="" position="225,475" size="100,100">You spend some time earching the desk but find nothing of interest.
+&lt;&lt;PickupItem &#39;battery1&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Search Guardhouse F" tags="" position="225,475" size="100,100">You spend some time searching the desk but find nothing of interest.
 &lt;&lt;AdjustDangerLevel 1&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Greenhouse" tags="" position="350,475" size="100,100">In one heroic move, you jump into the opening of the roof access door and land on your feet inside the greenhouse, ninja-like. You take deep breath, ninja-like. You collect yourself, ninja-like. You assess the situation... //like a ninja//.
-  The botanitcal specimens in this greenhouse are unlike anything you&#39;ve ever seen. Glossy pink bulbs seven feet across sit atop yellow vines that spread horizontally for twenty feet. One plant with sharp spikes is actually see-through.
+  The botanical specimens in this greenhouse are unlike anything you&#39;ve ever seen. Glossy pink bulbs seven feet across sit atop yellow vines that spread horizontally for twenty feet. One plant with sharp spikes is actually see-through.
   Suddenly, you hear a rustling sound. You look to the corner of the room and see a dark-green cluster of vertical vines twitching and shaking. //I might not be alone//, you think.
   Through the wall of the greenhouse, you spot a commotion of some kind on top of a gazebo just beyond the trees about forty feet away. You need to think fast!
 
-// Image of large, vibrant botanical plants
+// Image of large, vibrant botanical plants //
 
 If you check out the writhing vines, go to [[Story Card 25|Vines]].
 If you dash outside to explore the commotion on the gazebo, go to [[Story Card 9|Gazebo]].</tw-passagedata><tw-passagedata pid="34" name="House Side" tags="" position="475,475" size="100,100">Running along the side of the house, you discover that it is a tight squeeze between the house and the fence. You almost have to shuffle sideways to make it through, which makes you claustrophobic.
@@ -1054,7 +1054,7 @@ If you climb over the fence to follow the violin melody, go to [[Story Card 17|S
 
 // Image of bubbles under water //
 
-&lt;&lt;Challenge &#39;underwater-vine&#39; &#39;Underwater Escape S&#39; &#39;Underwater Escape F&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Flooded Tunnel Setup" tags="storyinit" position="850,475" size="100,100">&lt;&lt;CreateClue &#39;underwater-escape&#39; 20 &#39;Underwater Escape Clue&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Underwater Escape Clue" tags="" position="975,475" size="100,100">The thing--whatever it is--wraps more tightly around your leg. It&#39;s pulling you down! Another tendril (or tentable?) slides around your neck. You pry it off, and with the last of your strength, you give a powerful kick, and you&#39;re free. Just like that, the thing is gone. You emerge into a swimming pool with a lush pool house next to it.</tw-passagedata><tw-passagedata pid="39" name="Underwater Escape S" tags="" position="1100,475" size="100,100">&lt;&lt;Clue &#39;underwater-escape&#39;&gt;&gt;
+&lt;&lt;Challenge &#39;underwater-vine&#39; &#39;Underwater Escape S&#39; &#39;Underwater Escape F&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Flooded Tunnel Setup" tags="storyinit" position="850,475" size="100,100">&lt;&lt;CreateClue &#39;underwater-escape&#39; 20 &#39;Underwater Escape Clue&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Underwater Escape Clue" tags="" position="975,475" size="100,100">The thing--whatever it is--wraps more tightly around your leg. It&#39;s pulling you down! Another tendril (or tentacle?) slides around your neck. You pry it off, and with the last of your strength, you give a powerful kick, and you&#39;re free. Just like that, the thing is gone. You emerge into a swimming pool with a lush pool house next to it.</tw-passagedata><tw-passagedata pid="39" name="Underwater Escape S" tags="" position="1100,475" size="100,100">&lt;&lt;Clue &#39;underwater-escape&#39;&gt;&gt;
 &lt;&lt;AdjustDangerLevel -2&gt;&gt;
 Proceed to [[Story Card 23|Pool]].</tw-passagedata><tw-passagedata pid="40" name="Underwater Escape F" tags="" position="1225,475" size="100,100">You flail about trying to wrench yourself free, but the creature--or whatever it is--holds your ankle fast.
 &lt;&lt;AdjustDangerLevel 4&gt;&gt;
@@ -1067,16 +1067,16 @@ Proceed to [[Story Card 23|Pool]].</tw-passagedata><tw-passagedata pid="40" name
 
 If you go to the pool house, go to [[Story Card 11|Pool House]].
 If you go straight to the action at the gazebo, go to [[Story Card 9|Gazebo]].</tw-passagedata><tw-passagedata pid="42" name="Pool Setup" tags="storyinit" position="225,600" size="100,100">&lt;&lt;CreateClue &#39;pool-ripples&#39; 8 &#39;Pool Ripples&#39;&gt;&gt;
-&lt;&lt;CreateItem &#39;orb&#39; &#39;Whirring Metal Sphere&#39; &#39;A metalic orb which softly glows and vibrates when a button on the side is pressed.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Search Pool S" tags="" position="350,600" size="100,100">&lt;&lt;Clue &#39;pool-ripples&#39;&gt;&gt;
+&lt;&lt;CreateItem &#39;orb&#39; &#39;Whirring Metal Sphere&#39; &#39;A metallic orb which softly glows and vibrates when a button on the side is pressed.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Search Pool S" tags="" position="350,600" size="100,100">&lt;&lt;Clue &#39;pool-ripples&#39;&gt;&gt;
 &lt;&lt;AdjustDangerLevel -2&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Search Pool F" tags="" position="475,600" size="100,100">You dive into the pool, but are unable to locate the source of the ripples and must come up for air.
-  The sound of your splashing may have attacted unwanted attention.
+  The sound of your splashing may have attracted unwanted attention.
 &lt;&lt;AdjustDangerLevel 2&gt;&gt;
-/% TODO: Repeatable %/</tw-passagedata><tw-passagedata pid="45" name="Pool Ripples" tags="" position="600,600" size="100,100">You walk down the steps into the water and see what&#39;s making the waves: a strange, whitting metal sphere, slightly bigger than a softball. You impulsively grab it.
-  The sphere vibrates in your hand. There are two buttons on it. You press one. Nothing happens. You press the other button. The sphere continues to vibrate. Insinctively, you press both buttons at the same time. The sphere stops moving and begins to glow.
+/% TODO: Repeatable %/</tw-passagedata><tw-passagedata pid="45" name="Pool Ripples" tags="" position="600,600" size="100,100">You walk down the steps into the water and see what&#39;s making the waves: a strange, whirring metal sphere, slightly bigger than a softball. You impulsively grab it.
+  The sphere vibrates in your hand. There are two buttons on it. You press one. Nothing happens. You press the other button. The sphere continues to vibrate. Instinctively, you press both buttons at the same time. The sphere stops moving and begins to glow.
 &lt;&lt;PickupItem &#39;orb&#39;&gt;&gt;
 &lt;&lt;AdjustPsychicLevel 3&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Kennel" tags="" position="725,600" size="100,100">You tiptoe through the open gate, eager to hear the finale of the chimp&#39;s violin piece. Quietly... quietly...
-  With your third step, you trigger a motion-sensor light that completely illuminates the interior of the building. Apparently, this is no stable: it&#39;s a kennel. Twenty Doberman Pinschers were peacefully enjoying the convert, but now they glate at you with anger in their eyes.
-  The chimp frowns and slowly points his violin bow towards you. The Dobermans respond and rush to attack you and then eat you alive. The last think you see is the chimpanzee violinist laughing at your fate. So embarassing!
+  With your third step, you trigger a motion-sensor light that completely illuminates the interior of the building. Apparently, this is no stable: it&#39;s a kennel. Twenty Doberman Pinschers were peacefully enjoying the convert, but now they glare at you with anger in their eyes.
+  The chimp frowns and slowly points his violin bow towards you. The Dobermans respond and rush to attack you and then eat you alive. The last think you see is the chimpanzee violinist laughing at your fate. So embarrassing!
 
 // Image of Doberman dogs rushing //
 
@@ -1108,7 +1108,7 @@ If you enter the hedge maze, go to [[Story Card 12|Hedge Maze]].</tw-passagedata
 &lt;&lt;Challenge &#39;cross-guardroof&#39; &#39;Cross Guardroof S&#39; &#39;Cross Guardroof F&#39;&gt;&gt;
 
 If you cross to the greenhouse, go to [[Story Card 29|Wood Bridge]].
-If you climb down the vine, go to [[Story Card 14|Courtyard]].</tw-passagedata><tw-passagedata pid="53" name="Guardhouse Roof Setup" tags="storyinit" position="350,725" size="100,100">&lt;&lt;CreateItem &#39;firstaid-kit&#39; &#39;First Aid Kit&#39; &#39;A fully stocked First Aid Kit. Discard to lower Danger Meter by 4.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Cross Guardroof S" tags="" position="475,725" size="100,100">You deftly manuver your way across the diplidated roof, and make your way to the first aid kit.
+If you climb down the vine, go to [[Story Card 14|Courtyard]].</tw-passagedata><tw-passagedata pid="53" name="Guardhouse Roof Setup" tags="storyinit" position="350,725" size="100,100">&lt;&lt;CreateItem &#39;firstaid-kit&#39; &#39;First Aid Kit&#39; &#39;A fully stocked First Aid Kit. Discard to lower Danger Meter by 4.&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Cross Guardroof S" tags="" position="475,725" size="100,100">You deftly manuever your way across the dilapidated roof, and make your way to the first aid kit.
 After retrieving your spoils, you retrace your steps back to the more stable section of the roof.
 &lt;&lt;PickupItem &#39;firstaid-kit&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="Cross Guardroof F" tags="" position="600,725" size="100,100">The unstable roof is more treacherous than you thought! After a few careful steps the rotting boards give way and send you tumbling into the ditch below.
 &lt;&lt;AdjustDangerLevel 2&gt;&gt;
@@ -1120,19 +1120,19 @@ Proceed to [[Story Card 26|Ditch]].
 // Image of dark tunnel lit by ceiling grates //
 
 If you dive into the water-filled tunnel, go to [[Story Card 22|Flooded Tunnel]].
-If you explore the partially collapsed tunnel, go to [[Story Card 16|Tunnel Collapse]].</tw-passagedata><tw-passagedata pid="57" name="Wood Bridge" tags="" position="850,725" size="100,100">After crossing the percarious board, you find yourself at one end of the walkway that spans the length of the greenhouse roof. From here you can see most of the mansion&#39;s vast grounds, which are a little out of place amid the surrounding suburban neighborhood. The air is full of mosquitoes and other ubzzing insects. The clouds you saw on the horizon earlier seem to be closer now. You see that there&#39;s an open access door in the roof that would allow you to descend into the greenhouse. You can also drop down onto a path, which appears to lead to the side of the mansion itself.
+If you explore the partially collapsed tunnel, go to [[Story Card 16|Tunnel Collapse]].</tw-passagedata><tw-passagedata pid="57" name="Wood Bridge" tags="" position="850,725" size="100,100">After crossing the precarious board, you find yourself at one end of the walkway that spans the length of the greenhouse roof. From here you can see most of the mansion&#39;s vast grounds, which are a little out of place amid the surrounding suburban neighborhood. The air is full of mosquitoes and other buzzing insects. The clouds you saw on the horizon earlier seem to be closer now. You see that there&#39;s an open access door in the roof that would allow you to descend into the greenhouse. You can also drop down onto a path, which appears to lead to the side of the mansion itself.
 
 // Image of mosquitoes //
 
 If you wriggle through the access door and enter the greenhouse, go to [[Story Card 2|Greenhouse]].
 If you drop onto the path and run to the side of the house, go to [[Story Card 20|House Side]].</tw-passagedata><tw-passagedata pid="58" name="Mine Field" tags="" position="975,725" size="100,100">You only make it a few steps across the open field before you head a clicking sound from around your feet that freezes you in your tracks. Looking down, you see freshly disturbed earth around your sneakers, as though someone had recently buried something there.
-  As you lift your foot to look--KA-KLICK!--the reality of the situation becomes clear. You have just stepped on a landmind.
+  As you lift your foot to look--KA-KLICK!--the reality of the situation becomes clear. You have just stepped on a landmine.
   A noise like thunder, infinitely loud, rings out, but you never even hear it. Instantly, everything goes black.
 
-// Image of Land Mine explosion
+// Image of Land Mine explosion //
 
-&lt;&lt;TheEnd&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Marsden House" tags="" position="1100,725" size="100,100">You appear in a driveway, which leads you to the manson&#39;s entrance. On the door is a plauqe that reads MARSDEN and a large crystal doorknocker, which seems newer than everything else on the front of the building. You knock loudly, many times. But there is no answer. The storm is really picking up now. You try the doorknob and are surprised to find that the door is unlocked.
-  You&#39;ve been lucky enough so far, but you wonder if you&#39;ve missed something. Beforeyou enter the house, you look back. You can see a few clear paths. One leads towards a statuary, another to a small cemetery. Two more paths stretch out towards a watery ditch with a gate and the house&#39;s luxurious pool. You could go back to explore if you want.
+&lt;&lt;TheEnd&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Marsden House" tags="" position="1100,725" size="100,100">You appear in a driveway, which leads you to the manson&#39;s entrance. On the door is a placque that reads MARSDEN and a large crystal doorknocker, which seems newer than everything else on the front of the building. You knock loudly, many times. But there is no answer. The storm is really picking up now. You try the doorknob and are surprised to find that the door is unlocked.
+  You&#39;ve been lucky enough so far, but you wonder if you&#39;ve missed something. Before you enter the house, you look back. You can see a few clear paths. One leads towards a statuary, another to a small cemetery. Two more paths stretch out towards a watery ditch with a gate and the house&#39;s luxurious pool. You could go back to explore if you want.
 
 /% TODO: Implement story return? Or remove that from the card description. %/
 Story Return
@@ -1144,10 +1144,10 @@ Story Return
 
   Otherwise you may advance to Chapter Two. Keep all inventory Items. (Coming Soon!)
 
-&lt;&lt;TheEnd&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Marsden Statue" tags="" position="1225,725" size="100,100">The horseman is a dashing, bearded Civil War soldier, his broonze face stoic. He holds out a cavalry sabre towards the brooding sky. The sword&#39;s edge glints in the weak sunlight that penetrates the thickening clouds above. The sword looks almost new.
+&lt;&lt;TheEnd&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Marsden Statue" tags="" position="1225,725" size="100,100">The horseman is a dashing, bearded Civil War soldier, his bronze face stoic. He holds out a cavalry sabre towards the brooding sky. The sword&#39;s edge glints in the weak sunlight that penetrates the thickening clouds above. The sword looks almost new.
   At the base of the statue is a plaque that proclaims this as a memorial to Henry Marsden. The plaque reads:
-  /% TODO: Italisize or stylize the plaque quote %/
-  Henry Marsden, born 1839, died 1887. General in the Union Army during the Civil War. Severely wounded at the Battle of Shiloh in 1862. Appointed warden of Hedge Brook Prison in 1880.
+
+  // Henry Marsden, born 1839, died 1887. General in the Union Army during the Civil War. Severely wounded at the Battle of Shiloh in 1862. Appointed warden of Hedge Brook Prison in 1880. //
 
   To your left is the entrance to a hedge maze. To your right is a graying picket fence with a rickety wooden gate. You can see two stone angel statues and beyond them, a cemetery.
 
@@ -1155,7 +1155,7 @@ Story Return
 &lt;&lt;Challenge &#39;climb-statue&#39; &#39;Climb Statue S&#39; &#39;Climb Statue F&#39;&gt;&gt;
 
 If you enter the hedge maze, go to [[Story Card 12|Hedge Maze]].
-If you visit the cemetery, go to [[Story Card 21|Cemetery]].</tw-passagedata><tw-passagedata pid="61" name="Search Statue S" tags="" position="100,850" size="100,100">&lt;&lt;Clue &#39;statue-secret-passage&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Search Statue F" tags="" position="225,850" size="100,100">&lt;&lt;AdjustDangerLevel 1&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Climb Statue S" tags="" position="350,850" size="100,100">&lt;&lt;Clue &#39;find-saber&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Climb Statue F" tags="" position="475,850" size="100,100">You slip while trying to comine the statue, with a clanging sound which may have attracted attention.
+If you visit the cemetery, go to [[Story Card 21|Cemetery]].</tw-passagedata><tw-passagedata pid="61" name="Search Statue S" tags="" position="100,850" size="100,100">&lt;&lt;Clue &#39;statue-secret-passage&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Search Statue F" tags="" position="225,850" size="100,100">&lt;&lt;AdjustDangerLevel 1&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Climb Statue S" tags="" position="350,850" size="100,100">&lt;&lt;Clue &#39;find-saber&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Climb Statue F" tags="" position="475,850" size="100,100">You slip while trying to climb the statue, with a clanging sound which may have attracted attention.
 &lt;&lt;AdjustDangerLevel 2&gt;&gt;
 /% TODO: Implement try again challenges %/</tw-passagedata><tw-passagedata pid="65" name="Marsden Statue Setup" tags="storyinit" position="600,850" size="100,100">&lt;&lt;CreateClue &#39;statue-secret-passage&#39; 18 &#39;Statue Secret Passage&#39;&gt;&gt;
 &lt;&lt;CreateClue &#39;find-saber&#39; 2 &#39;Find Cavalry Saber&#39;&gt;&gt;
@@ -1176,7 +1176,7 @@ If you travel through the tunnel, go to [[Story Card 28|Tunnel]].</tw-passagedat
 &lt;&lt;PickupTool &#39;wooden-dowel&#39;&gt;&gt;
 &lt;&lt;AdjustPsychicLevel 1&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="Search Sarcophagus F" tags="" position="100,975" size="100,100">You spend a few min searching around the sarcophagus but do not find anything of interest.
 &lt;&lt;AdjustDangerLevel 1&gt;&gt;
-/% TODO: Make this retriable %/</tw-passagedata><tw-passagedata pid="72" name="Open Sarcophagus S" tags="" position="225,975" size="100,100">It takes some muscle, but you manage to remove the lid and are surprised to find that not only is there no body, but an opening to a secret passageway offers yet another way out of the mausoleum.
+/% TODO: Make this re-triable %/</tw-passagedata><tw-passagedata pid="72" name="Open Sarcophagus S" tags="" position="225,975" size="100,100">It takes some muscle, but you manage to remove the lid and are surprised to find that not only is there no body, but an opening to a secret passageway offers yet another way out of the mausoleum.
 
 Or... To take the secret passageway:
 &lt;&lt;Clue &#39;mausoleum-secret-passage&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Mausoleum Secret Passage" tags="" position="350,975" size="100,100">You travel through the tunnel for what feels like forever. The light disappears, and the tunnel eventually ends. You feel frightened and trapped. You want to run back and try the other routes out of the mausoleum.
@@ -1190,7 +1190,7 @@ Proceed to [[Story Card 12|Hedge Maze]]</tw-passagedata><tw-passagedata pid="74"
   &quot;Hedge Brook Police Station. Sergeant Morrison speaking,&quot; he says.
   &quot;Sergeant Morrison!&quot; you blurt out. &quot;It&#39;s me! I&#39;m on the grounds of the Marsden house! I might be in trouble!&quot;
   &quot;Hello? Hello?&quot; says the sergeant impatiently.
-  &quot;It&#39;s me!&quot; you sout back. &quot;I need your help!&quot;
+  &quot;It&#39;s me!&quot; you shout back. &quot;I need your help!&quot;
   &quot;Hello?&quot; Sergeant Morrison says, exasperated. &quot;Good-bye!&quot;
   He hangs up!
   You are unsure why the sergeant couldn&#39;t hear you, but you are now distracted by a swirl of sounds: a haunting violin plays somewhere outside, while a wild and chaotic noise rises from a gazebo in the distance.
@@ -1200,7 +1200,7 @@ If you check out the gazebo, go to [[Story Card 9|Gazebo]].</tw-passagedata><tw-
   You encounter a shadowy, hunched-over figure emerging from the darkened doorway of a decrepit gatehouse. You can just barely make out eyes and white fangs dripping with saliva.
   The figure crouches, as if to spring forward at any moment.
   &quot;Who&#39;s th-there?&quot; you stammer.
-  Suddenly, the creature lunches at you, snarkling. You spot a guardhouse not far away. If you can get past the creature, you might be able to hide there. Or perhaps you should just turn and flee up the driveway towards the main house!
+  Suddenly, the creature lunches at you, snarling. You spot a guardhouse not far away. If you can get past the creature, you might be able to hide there. Or perhaps you should just turn and flee up the driveway towards the main house!
 
 // Image of a dark, hairy silhouette in a gate house in front of the manor. //
 
@@ -1220,7 +1220,7 @@ Run into the guardhouse, go to [[Story Card 19|Guardhouse]].</tw-passagedata><tw
 
 If you dash through the hedges, go to [[Story Card 15|Bush Garden]].
 If you jump into the ditch, go to [[Story Card 26|Ditch]].</tw-passagedata><tw-passagedata pid="82" name="Gazebo" tags="" position="225,1100" size="100,100">You sprint to the gazebo, practically pushed along by the winds that are picking up. A light sprinkling of rain spatters the ground as you run.
-  You make it to the shelter of the structure, and the mayhem occuring above you on the roof increases in intensity.
+  You make it to the shelter of the structure, and the mayhem occurring above you on the roof increases in intensity.
   Who is up there, and what are they doing? you wonder.
   You notice a drive way about twenty feet away.
 
@@ -1234,25 +1234,27 @@ Chapter 1
 The Grounds
 &lt;/h1&gt;
 
-&lt;div class=&quot;title&quot;&gt;[[Start|Chapter 1 Opening]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="84" name="Chapter 1 Opening" tags="nofooter" position="475,1100" size="100,100">It&#39;s a Tuesday morning in late June, and you wake up in a cold weat. The nightmares came again last night. Even though you are an aspiring detective and psychic investigator, you haven&#39;t been able to make sense of the haunting dreams you&#39;ve had these past few weeks. In your dreams, you keep seeing the same spooky house. You&#39;re still shivering under the covers when you hear the phone ring downstairs in your basement, where you have your combination office and research laboratory. You dash down to the lab to answer it.
+&lt;div class=&quot;title&quot;&gt;[[Start|Chapter 1 Opening]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="84" name="Chapter 1 Opening" tags="nofooter" position="475,1100" size="100,100">It&#39;s a Tuesday morning in late June, and you wake up in a cold sweat. The nightmares came again last night. Even though you are an aspiring detective and psychic investigator, you haven&#39;t been able to make sense of the haunting dreams you&#39;ve had these past few weeks. In your dreams, you keep seeing the same spooky house. You&#39;re still shivering under the covers when you hear the phone ring downstairs in your basement, where you have your combination office and research laboratory. You dash down to the lab to answer it.
   &quot;I need... I need...,&quot; a weak voice says when you pick up the receiver. &quot;I need your hel-l-l-lp.&quot; You hear a louse click, and the phone goes dead.
   But you were prepared: while the caller was talking, you activated your high-speed telephone tracing device. It instantly displays the caller&#39;s number: 555-7259.
   You call back the number right away, but there&#39;s no answer. After consulting the tall stack of reverse phone books behind your desk, you are disappointed to learn the number is unlisted.
   You sense that the phone call is somehow related to your nightmares.
   Later, while at the Hedge Brook Police Station to return a night scope you borrowed for a recent stakeout, you describe the mysterious phone call and you recurring dreams to your friend, Sergeant Morrison.
-  &quot;That call does sound strang,&quot; he says. &quot;We&#39;ll look into it.&quot;
-  &quot;And about that house in your dreams,&quot; a voice says from the hallway. &quot;I wonder if your&#39;re dreaming about the Marsden house out on Hedge Brook Road.&quot; Detective Murphy sticks his mustached face into the room.
+  &quot;That call does sound strange,&quot; he says. &quot;We&#39;ll look into it.&quot;
+  &quot;And about that house in your dreams,&quot; a voice says from the hallway. &quot;I wonder if you&#39;re dreaming about the Marsden house out on Hedge Brook Road.&quot; Detective Murphy sticks his mustached face into the room.
   &quot;Modern house, ornate gate... That sounds like the Marsden place, all right,&quot; says Sergeant Morrison. &quot;Strange things are reported to happen out there.&quot;
-  Detective Murphy takes a puff on his pipe. &quot;That place is haunted,&quot; he says. &quot;I know it sounds unprofessional, but I&#39;ve had a file on the Marsen house for years, and I&#39;m sure of it.&quot; He waves a folder in front of your eyes, and a phone number written on the front jumps out at you. //It matches the one from your mysterious phone call.//
+  Detective Murphy takes a puff on his pipe. &quot;That place is haunted,&quot; he says. &quot;I know it sounds unprofessional, but I&#39;ve had a file on the Marsden house for years, and I&#39;m sure of it.&quot; He waves a folder in front of your eyes, and a phone number written on the front jumps out at you. //It matches the one from your mysterious phone call.//
   So the call is related to your nightmares--//your psychic senses were right//!
 
 &lt;&lt;Clue &#39;chapter-1-goal&#39;&gt;&gt;
 
 [[Proceed to the Marsden Estate|Outside Gates]]</tw-passagedata><tw-passagedata pid="85" name="Chapter 1 Opening Setup" tags="storyinit" position="600,1100" size="100,100">&lt;&lt;CreateClue &#39;chapter-1-goal&#39; 4 &#39;Chapter 1 Goal&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="86" name="Chapter 1 Goal" tags="" position="725,1100" size="100,100">Chapter Goal:
-Find a way into the Marsden Manor.</tw-passagedata><tw-passagedata pid="87" name="House Gates" tags="" position="850,1100" size="100,100">You stand outside the gates of the House.
+Find a way into the Marsden Manor.</tw-passagedata><tw-passagedata pid="87" name="Start" tags="" position="850,1100" size="100,100">Hello World from Twine on Spindle!
+
+[[Start|Chapter 1: The Grounds]]</tw-passagedata><tw-passagedata pid="88" name="House Gates" tags="" position="975,1100" size="100,100">You stand outside the gates of the House.
 
 [[Option 1|Gate House]]: Try the Gate
-[[Option 2|Statuary Test]]: Search the wall</tw-passagedata><tw-passagedata pid="88" name="Statuary Test" tags="" position="975,1100" size="100,100">You stand in a statue garden. There is a soldier statue with a gleaming sword in the center.
+[[Option 2|Statuary Test]]: Search the wall</tw-passagedata><tw-passagedata pid="89" name="Statuary Test" tags="" position="1100,1100" size="100,100">You stand in a statue garden. There is a soldier statue with a gleaming sword in the center.
 
 &lt;&lt;Challenge &#39;statue&#39; &#39;Test Search Statue S&#39; &#39;Test Search Statue F&#39;&gt;&gt;
 
@@ -1261,24 +1263,22 @@ Find a way into the Marsden Manor.</tw-passagedata><tw-passagedata pid="87" name
 [[Option 1|House Door]]: Knock on the house door.
 [[Option 2|Test Hedge Maze]]: Visit the Hedge Maze.
 
-&lt;&lt;FindPremonition &#39;hedge-maze&#39; 5&gt;&gt;</tw-passagedata><tw-passagedata pid="89" name="Test Search Statue S" tags="" position="1100,1100" size="100,100">&lt;&lt;Clue 1 &quot;1-Clue&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="90" name="Test Search Statue F" tags="" position="1225,1100" size="100,100">You find nothing interesting about the statue.</tw-passagedata><tw-passagedata pid="91" name="1-Clue" tags="" position="100,1225" size="100,100">This is the first clue!
-You find a Cavalry &lt;&lt;PickupTool &#39;Saber&#39;&gt;&gt; in surprisingly good condition!</tw-passagedata><tw-passagedata pid="92" name="2-Clue" tags="" position="225,1225" size="100,100">This is the second clue!</tw-passagedata><tw-passagedata pid="93" name="Gate House" tags="" position="350,1225" size="100,100">You stand in the gate house.
+&lt;&lt;FindPremonition &#39;hedge-maze&#39; 5&gt;&gt;</tw-passagedata><tw-passagedata pid="90" name="Test Search Statue S" tags="" position="1225,1100" size="100,100">&lt;&lt;Clue 1 &quot;1-Clue&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="91" name="Test Search Statue F" tags="" position="100,1225" size="100,100">You find nothing interesting about the statue.</tw-passagedata><tw-passagedata pid="92" name="1-Clue" tags="" position="225,1225" size="100,100">This is the first clue!
+You find a Cavalry &lt;&lt;PickupTool &#39;Saber&#39;&gt;&gt; in surprisingly good condition!</tw-passagedata><tw-passagedata pid="93" name="2-Clue" tags="" position="350,1225" size="100,100">This is the second clue!</tw-passagedata><tw-passagedata pid="94" name="Gate House" tags="" position="475,1225" size="100,100">You stand in the gate house.
 
 There is a Key here.
 &lt;&lt;pickup &#39;$items&#39; &#39;Key&#39;&gt;&gt;
 
 &lt;&lt;Challenge &#39;read-map&#39; &#39;Read Map Success&#39; &#39;Read Map Failure&#39;&gt;&gt;
 
-[[Option 1|Statuary]]: Pass through to the Statuary.</tw-passagedata><tw-passagedata pid="94" name="Read Map Success" tags="" position="475,1225" size="100,100">You inspect the map on the wall and determine the location of the house.
-You jot it down in your notebook. &lt;&lt;pickup &#39;$items&#39; &#39;Note (House Location)&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="95" name="Read Map Failure" tags="" position="600,1225" size="100,100">You forgot to bring your reading glasses and cannot make heads or tails of the map.</tw-passagedata><tw-passagedata pid="96" name="Test Hedge Maze" tags="" position="725,1225" size="100,100">You stand in a Hedge Maze.
+[[Option 1|Statuary]]: Pass through to the Statuary.</tw-passagedata><tw-passagedata pid="95" name="Read Map Success" tags="" position="600,1225" size="100,100">You inspect the map on the wall and determine the location of the house.
+You jot it down in your notebook. &lt;&lt;pickup &#39;$items&#39; &#39;Note (House Location)&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="96" name="Read Map Failure" tags="" position="725,1225" size="100,100">You forgot to bring your reading glasses and cannot make heads or tails of the map.</tw-passagedata><tw-passagedata pid="97" name="Test Hedge Maze" tags="" position="850,1225" size="100,100">You stand in a Hedge Maze.
 
 A Yeti attacks and kills you.
 
-The End</tw-passagedata><tw-passagedata pid="97" name="House Door" tags="" position="850,1225" size="100,100">You made it into the house!
+The End</tw-passagedata><tw-passagedata pid="98" name="House Door" tags="" position="975,1225" size="100,100">You made it into the house!
 
-You Win!</tw-passagedata><tw-passagedata pid="98" name="StorySubtitle" tags="" position="975,1225" size="100,100">A Choose Your Own Adventure</tw-passagedata><tw-passagedata pid="99" name="StoryAuthor" tags="" position="1100,1225" size="100,100">Brandon Risberg</tw-passagedata><tw-passagedata pid="100" name="StoryBanner" tags="" position="1225,1225" size="100,100"></tw-passagedata><tw-passagedata pid="101" name="StoryCaption" tags="" position="100,1350" size="100,100"></tw-passagedata><tw-passagedata pid="102" name="Start" tags="" position="225,1350" size="100,100">Hello World from Twine on Spindle!
-
-[[Start|Chapter 1: The Grounds]]</tw-passagedata><tw-passagedata pid="103" name="Challenges" tags="widget" position="350,1350" size="100,100">&lt;&lt;nobr&gt;&gt;
+You Win!</tw-passagedata><tw-passagedata pid="99" name="StorySubtitle" tags="" position="1100,1225" size="100,100">A Choose Your Own Adventure</tw-passagedata><tw-passagedata pid="100" name="StoryAuthor" tags="" position="1225,1225" size="100,100">Brandon Risberg</tw-passagedata><tw-passagedata pid="101" name="StoryBanner" tags="" position="100,1350" size="100,100"></tw-passagedata><tw-passagedata pid="102" name="StoryCaption" tags="" position="225,1350" size="100,100"></tw-passagedata><tw-passagedata pid="103" name="Challenges" tags="widget" position="350,1350" size="100,100">&lt;&lt;nobr&gt;&gt;
   /% Challenge Macro
     Displays a Challenge box and provides a button for the Player to attempt the Challenge.
     Rolls a random number and based on the outcome compared to the DangerLevel prints the
@@ -1360,8 +1360,8 @@ You Win!</tw-passagedata><tw-passagedata pid="98" name="StorySubtitle" tags="" p
   &lt;&lt;/widget&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="106" name="Premonitions" tags="widget" position="725,1350" size="100,100">&lt;&lt;nobr&gt;&gt;
   /% FindPremonition Macro
-    If the player has enough Psychic Level to recieve the premonition, this macro
-    display text about aquiring the premonition and adds it to the player inventory.
+    If the player has enough Psychic Level to receive the premonition, this macro
+    display text about acquiring the premonition and adds it to the player inventory.
 
     @param string Premonition name
     @param number Minimum Psychic Level
@@ -1372,7 +1372,7 @@ You Win!</tw-passagedata><tw-passagedata pid="98" name="StorySubtitle" tags="" p
       &lt;&lt;pickup &#39;$premonitions&#39; $args[0]&gt;&gt;
     &lt;&lt;else&gt;&gt;
       You sense fleeting impressions of a Psychic Premonition, but your Psychic
-      Sentitivity is not high enough to make any sense of it.
+      Sensitivity is not high enough to make any sense of it.
     &lt;&lt;/if&gt;&gt;
   &lt;&lt;/widget&gt;&gt;
 
